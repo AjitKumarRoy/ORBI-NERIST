@@ -1,16 +1,10 @@
 import { Section } from "@/components/ui/Section";
-import { Title } from "@/components/ui/Title";
 import { FAQSection } from "./FAQSection";
 import { CTASection } from "./CTASection";
-import { HelpCircle } from "lucide-react";
 
 export function FaqAndCTA() {
   return (
     <Section>
-      {/* <Title icon={HelpCircle} as="h2">
-        Learn More & Get Involved
-      </Title> */}
-      
       <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
         {/* FAQ Section takes up 2/3 of the space on large screens */}
         <div className="lg:col-span-2">

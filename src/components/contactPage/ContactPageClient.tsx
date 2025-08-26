@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { PageHero } from '@/components/ui/PageHero';
 import pageData from '@/data/contactPage/contactPage.json';
 import { ComingSoon } from '../ui/ComingSoon';

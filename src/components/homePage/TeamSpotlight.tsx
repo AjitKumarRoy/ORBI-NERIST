@@ -44,7 +44,7 @@ export function TeamSpotlight() {
           <h3 className="text-2xl font-bold text-white">{piData.name}</h3>
           <p className="text-base text-cyan-400">{piData.title}</p>
           <blockquote className="mt-4 border-l-4 border-slate-700 pl-4 text-left text-slate-300 italic">
-            "{piData.message}"
+            &#34;{piData.message}&#34;
           </blockquote>
         </div>
 
