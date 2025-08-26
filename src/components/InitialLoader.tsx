@@ -5,7 +5,7 @@ import { motion, AnimatePresence, Variants } from 'framer-motion';
 import Image from 'next/image';
 import { useLoading } from '@/context/LoadingContext';
 
-const smart25 = "/images/smart25-logo.jpeg";
+const logo = "/images/logos/orbi2.png";
 
 // Animation variants (these remain the same)
 const loaderVariants: Variants = {
@@ -54,14 +54,14 @@ export default function InitialLoader() {
             exit="exit"
           >
             <Image
-              src={smart25}
+              src={logo}
               alt="Logo"
               width={200}
               height={200}
               className="rounded-full shadow-2xl border-2 border-white/20 sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px]"
             />
             <div className="flex flex-col items-center gap-2">
-              <span className="text-white text-lg md:text-xl font-jakarta font-medium">SMART&apos;25</span>
+              <span className="text-white text-lg md:text-xl font-jakarta font-medium">Orbital Research & Beyond Innovations</span>
               <div className="flex gap-2">
                 {[0, 1, 2].map((i) => (
                   <motion.span
