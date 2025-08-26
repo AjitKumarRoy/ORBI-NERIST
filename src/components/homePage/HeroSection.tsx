@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import heroData from "@/data/homePage/hero.json";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -15,14 +15,18 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { y: 20, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 0.8, ease: "easeOut" },
+    transition: { 
+      duration: 0.8, 
+      ease: "easeOut" // Use a valid easing string like "easeOut"
+    },
   },
 };
+
 
 export const HeroSection = () => {
   return (
