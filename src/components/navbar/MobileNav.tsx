@@ -13,7 +13,7 @@ interface MobileNavProps {
   handleMobileMenuToggle: () => void;
   setIsSearchOpen: (isOpen: boolean) => void;
   setIsMoreOpen: (isOpen: boolean) => void;
-  mobileMenuRef: React.RefObject<HTMLDivElement>;
+  mobileMenuRef: React.RefObject<HTMLDivElement | null>;
   handleCloseAll: () => void;
   isActive: (href: string) => boolean;
   isMoreLinkActive: boolean;

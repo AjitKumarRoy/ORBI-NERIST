@@ -5,12 +5,13 @@ import { motion, AnimatePresence, Variants } from "framer-motion";
 import { FiSearch, FiChevronDown, FiChevronUp, FiHome } from "react-icons/fi";
 import { mainNavLinks, moreDropdownLinks } from "./NavbarData";
 
-// Define props for the component
+// Define the props for the component
 interface DesktopNavProps {
   isMoreOpen: boolean;
   setIsMoreOpen: (isOpen: boolean) => void;
   setIsSearchOpen: (isOpen: boolean) => void;
-  moreDropdownRef: React.RefObject<HTMLDivElement>;
+  // --- THIS IS THE CORRECTED LINE ---
+  moreDropdownRef: React.RefObject<HTMLDivElement | null>;
   handleCloseAll: () => void;
   isActive: (href: string) => boolean;
   isMoreLinkActive: boolean;
@@ -70,40 +71,15 @@ export function DesktopNav({
               variants={dropdownVariants}
               className="absolute top-full left-1/2 -translate-x-1/2 mt-4 min-w-[180px] bg-slate-900 border border-slate-800 shadow-xl rounded-lg overflow-hidden py-2"
             >
-              {moreDropdownLinks.map((item) => {
-                const isExternal = item.href.startsWith('http');
-                const linkClasses = `block px-5 py-2 transition-colors duration-200 text-base ${
-                  isActive(item.href)
-                    ? "bg-cyan-900/50 text-cyan-400"
-                    : "text-slate-300 hover:bg-slate-800"
-                }`;
-
-                if (isExternal) {
-                  return (
-                    <a
-                      key={item.href}
-                      href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={linkClasses}
-                      onClick={handleCloseAll}
-                    >
-                      {item.label}
-                    </a>
-                  );
-                }
-
-                return (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className={linkClasses}
-                    onClick={handleCloseAll}
-                  >
-                    {item.label}
-                  </Link>
-                );
-              })}
+              {moreDropdownLinks.map((item) => (
+                <DropdownLink 
+                  key={item.href}
+                  href={item.href}
+                  label={item.label}
+                  isActive={isActive(item.href)}
+                  onClick={handleCloseAll}
+                />
+              ))}
             </motion.div>
           )}
         </AnimatePresence>
@@ -147,5 +123,39 @@ function Underline({ isActive }: { isActive: boolean }) {
         isActive ? "scaleX-100" : "scaleX-0 group-hover:scaleX-100"
       }`}
     />
+  );
+}
+
+// --- NEW SUB-COMPONENT FOR DROPDOWN LINKS ---
+function DropdownLink({ href, label, isActive, onClick }: { href: string; label: string; isActive: boolean; onClick: () => void; }) {
+  const isExternal = href.startsWith('http');
+  const linkClasses = `block px-5 py-2 transition-colors duration-200 text-base ${
+    isActive
+      ? "bg-cyan-900/50 text-cyan-400"
+      : "text-slate-300 hover:bg-slate-800"
+  }`;
+
+  if (isExternal) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={linkClasses}
+        onClick={onClick}
+      >
+        {label}
+      </a>
+    );
+  }
+
+  return (
+    <Link
+      href={href}
+      className={linkClasses}
+      onClick={onClick}
+    >
+      {label}
+    </Link>
   );
 }
