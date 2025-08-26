@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { differenceInDays } from 'date-fns';
 
 // Import Section Components
 import { HeroSection } from '@/components/homePage/HeroSection';
