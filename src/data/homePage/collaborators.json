@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "NASA",
+    "logoUrl": "/images/engine.avif",
+    "link": "https://www.nasa.gov/"
+  },
+  {
+    "id": 2,
+    "name": "SpaceX",
+    "logoUrl": "/images/engine.avif",
+    "link": "https://www.spacex.com/"
+  },
+  {
+    "id": 3,
+    "name": "ISRO",
+    "logoUrl": "/images/nebula.jpg",
+    "link": "https://www.isro.gov.in/"
+  },
+  {
+    "id": 4,
+    "name": "ESA",
+    "logoUrl": "/images/engine.avif",
+    "link": "https://www.esa.int/"
+  },
+  {
+    "id": 5,
+    "name": "JAXA",
+    "logoUrl": "/images/nebula.jpg",
+    "link": "https://global.jaxa.jp/"
+  },
+  {
+    "id": 6,
+    "name": "Boeing",
+    "logoUrl": "/images/engine.avif",
+    "link": "https://www.boeing.com/"
+  },
+  {
+    "id": 7,
+    "name": "Lockheed Martin",
+    "logoUrl": "/images/nebula.jpg",
+    "link": "https://www.lockheedmartin.com/"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "videoUrl": "/videos/background_video.mp4",
+  "satelliteImage": "/images/satellite.png",
+  "altText": "A satellite representing ORBI's research in orbit",
+  "title": "ORBI",
+  "subtitle": "Orbital Research & Beyond Innovations",
+  "ctaButton": {
+    "text": "Explore Our Research",
+    "link": "/research"
+  }
+}

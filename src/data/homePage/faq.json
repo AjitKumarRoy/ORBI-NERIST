@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary mission of ORBI?",
+    "answer": "ORBI's primary mission is to foster a culture of research and innovation. We provide a platform for students and faculty to collaborate on cutting-edge, interdisciplinary projects in aerospace, AI, robotics, and sustainable technologies."
+  },
+  {
+    "id": 2,
+    "question": "How can I join or collaborate with ORBI?",
+    "answer": "We welcome collaboration from students, faculty, and industry partners. Students can look for recruitment notices on our website. For research or industry partnerships, please reach out to us via our Contact page."
+  },
+  {
+    "id": 3,
+    "question": "What kind of projects does ORBI work on?",
+    "answer": "Our projects are diverse, ranging from designing next-generation satellite propulsion systems and AI-driven orbital mechanics to developing sustainable energy solutions and autonomous robotic systems for exploration."
+  },
+  {
+    "id": 4,
+    "question": "Is ORBI limited to students of a specific department?",
+    "answer": "Not at all. ORBI is an interdisciplinary organization. We encourage participation from all academic departments, including engineering, sciences, management, and humanities, to foster diverse and innovative solutions."
+  }
+]

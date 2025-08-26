@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Artificial Intelligence",
+    "description": "Applying machine learning and automation to solve complex challenges in aerospace and robotics.",
+    "icon": "BrainCircuit",
+    "link": "/research/ai"
+  },
+  {
+    "id": 2,
+    "title": "Aerospace Engineering",
+    "description": "Designing and developing advanced systems, from satellite constellations to next-generation propulsion.",
+    "icon": "Rocket",
+    "link": "/research/aerospace"
+  },
+  {
+    "id": 3,
+    "title": "Robotics & Automation",
+    "description": "Building intelligent autonomous systems for exploration, manufacturing, and real-world problem-solving.",
+    "icon": "Bot",
+    "link": "/research/robotics"
+  },
+  {
+    "id": 4,
+    "title": "Sustainable Technologies",
+    "description": "Innovating in environmental systems and renewable energy for a sustainable future on Earth and beyond.",
+    "icon": "Sparkles",
+    "link": "/research/sustainability"
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": "event-1",
+    "title": "Event 1",
+    "date": "2025-06-15",
+    "link": "#",
+    "location": "Main Auditorium",
+    "description": "Our annual convocation ceremony celebrating the achievements of our graduating class."
+  },
+  {
+    "id": "event-2",
+    "title": "Event 2",
+    "date": "2025-06-28",
+    "link": "#",
+    "location": "AI Research Lab, Building C",
+    "description": "An intensive residential training program on Artificial Intelligence and Machine Learning."
+  },
+  {
+    "id": "event-3",
+    "title": "Event 3",
+    "date": "2025-06-31",
+    "link": "#",
+    "location": "Convention Center",
+    "description": "ICOM 2025 - The International Conference on Micro and Nano Fluidics."
+  },
+  {
+    "id": "event-4",
+    "title": "Event 4",
+    "date": "2025-07-15",
+    "link": "#",
+    "location": "Engineering Faculty Arena",
+    "description": "Witness innovation in action at the Annual Robotics Competition."
+  },
+  {
+    "id": "event-5",
+    "title": "Event 5",
+    "date": "2025-08-05",
+    "link": "#",
+    "location": "Lecture Hall 1",
+    "description": "A special guest lecture by Dr. Anya Sharma on the future of Quantum Computing."
+  },
+  {
+    "id": "event-6",
+    "title": "Event 6",
+    "date": "2025-08-20",
+    "link": "#",
+    "location": "Grand Exhibition Hall",
+    "description": "Our annual research symposium featuring presentations and posters from all academic disciplines."
+  },
+  {
+    "id": "event-7",
+    "title": "Event 7",
+    "date": "2025-09-10",
+    "link": "#",
+    "location": "Innovation Hub",
+    "description": "An exciting day where student and faculty startups pitch their ideas to a panel of investors."
+  },
+  {
+    "id": "event-8",
+    "title": "Event 8",
+    "date": "2025-10-01",
+    "link": "#",
+    "location": "University Club",
+    "description": "Connect with fellow alumni and expand your professional network at our annual alumni mixer event."
+  },
+  {
+    "id": "event-9",
+    "title": "Event 9",
+    "date": "2025-10-18",
+    "link": "#",
+    "location": "Virtual via WebEx",
+    "description": "A seminar on the latest advancements in sustainable energy solutions and their global impact."
+  },
+  {
+    "id": "event-10",
+    "title": "Event 10",
+    "date": "2026-04-05",
+    "link": "#",
+    "location": "Photonics Lab",
+    "description": "Hands-on workshop covering the fundamentals of laser optics and fiber-optic communication."
+  },
+  {
+    "id": "event-11",
+    "title": "Event 11",
+    "date": "2026-04-22",
+    "link": "#",
+    "location": "Biotech Auditorium",
+    "description": "Guest lecture on breakthroughs in CRISPR gene-editing technologies by a leading expert."
+  },
+  {
+    "id": "event-12",
+    "title": "Event 12",
+    "date": "2026-05-10",
+    "link": "#",
+    "location": "Computer Science Dept.",
+    "description": "A 24-hour hackathon focused on developing applications for satellite data analysis."
+  },
+  {
+    "id": "event-13",
+    "title": "Event 13",
+    "date": "2026-05-25",
+    "link": "#",
+    "location": "Virtual Conference",
+    "description": "International Symposium on Aerospace Propulsion and Power Systems."
+  },
+  {
+    "id": "event-14",
+    "title": "Event 14",
+    "date": "2026-06-12",
+    "link": "#",
+    "location": "Advanced Materials Lab",
+    "description": "A showcase of student projects on the development of next-generation composite materials."
+  },
+  {
+    "id": "event-15",
+    "title": "Event 15",
+    "date": "2026-06-28",
+    "link": "#",
+    "location": "Room 303, Science Block",
+    "description": "PhD defense presentations from the Department of Physics."
+  },
+  {
+    "id": "event-16",
+    "title": "Event 16",
+    "date": "2026-07-15",
+    "link": "#",
+    "location": "Main Campus Quad",
+    "description": "Summer Research Fair, where students present their summer project findings to the community."
+  },
+  {
+    "id": "event-17",
+    "title": "Event 17",
+    "date": "2026-07-30",
+    "link": "#",
+    "location": "Virtual via Zoom",
+    "description": "An online information session for prospective graduate students for the 2027 academic year."
+  },
+  {
+    "id": "event-18",
+    "title": "Event 18",
+    "date": "2026-08-14",
+    "link": "#",
+    "location": "Observatory Hill",
+    "description": "Annual meteor shower viewing event hosted by the Astrophysics Club."
+  },
+  {
+    "id": "event-19",
+    "title": "Event 19",
+    "date": "2026-08-28",
+    "link": "#",
+    "location": "Lecture Hall 4",
+    "description": "Seminar Series: Ethical Considerations in Artificial Intelligence and Autonomous Systems."
+  },
+  {
+    "id": "event-20",
+    "title": "Event 20",
+    "date": "2026-09-10",
+    "link": "#",
+    "location": "Robotics & Automation Center",
+    "description": "Open house and technology demonstration at the new Robotics and Automation Center."
+  },
+  {
+    "id": "event-21",
+    "title": "Event 21",
+    "date": "2026-09-25",
+    "link": "#",
+    "location": "Digital Learning Center",
+    "description": "Workshop on high-performance computing for scientific research."
+  },
+  {
+    "id": "event-22",
+    "title": "Event 22",
+    "date": "2026-10-08",
+    "link": "#",
+    "location": "Conference Hall B",
+    "description": "Industry-Academia Conclave to foster collaboration on real-world engineering challenges."
+  },
+  {
+    "id": "event-23",
+    "title": "Event 23",
+    "date": "2026-10-21",
+    "link": "#",
+    "location": "Virtual",
+    "description": "Webinar on Intellectual Property Rights and Patent Filing for Researchers."
+  },
+  {
+    "id": "event-24",
+    "title": "Event 24",
+    "date": "2026-11-05",
+    "link": "#",
+    "location": "Main Auditorium",
+    "description": "Founder's Day Lecture Series featuring distinguished alumni."
+  },
+  {
+    "id": "event-25",
+    "title": "Event 25",
+    "date": "2026-11-19",
+    "link": "#",
+    "location": "Materials Science Lab",
+    "description": "Demonstration of a new electron microscope and its research capabilities."
+  },
+  {
+    "id": "event-26",
+    "title": "Event 26",
+    "date": "2026-12-03",
+    "link": "#",
+    "location": "Innovation Hub",
+    "description": "Final presentations for the undergraduate engineering design projects."
+  },
+  {
+    "id": "event-27",
+    "title": "Event 27",
+    "date": "2026-12-18",
+    "link": "#",
+    "location": "Virtual",
+    "description": "End-of-year research review and planning session for all lab members."
+  },
+  {
+    "id": "event-28",
+    "title": "Event 28",
+    "date": "2027-01-15",
+    "link": "#",
+    "location": "Grand Exhibition Hall",
+    "description": "Science and Technology Fair for local high school students."
+  },
+  {
+    "id": "event-29",
+    "title": "Event 29",
+    "date": "2027-02-02",
+    "link": "#",
+    "location": "Lecture Hall 2",
+    "description": "Guest lecture on the challenges and opportunities in deep space exploration."
+  },
+  {
+    "id": "event-30",
+    "title": "Event 30",
+    "date": "2027-02-20",
+    "link": "#",
+    "location": "Convention Center",
+    "description": "National Conference on Sustainable and Renewable Energy Technologies."
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Mr. Rishikesan Visuvamithran",
+    "title": "Renault Nissan Technology and Business Center, India",
+    "affiliation": "",
+    "image": "/images/speakers/rishikesan.png",
+    "link": "/speakers"
+  },
+  {
+    "name": "Dr. Alankrita Singh",
+    "title": "Indian Institute of Technology Roorkee, India",
+    "affiliation": "",
+    "image": "/images/speakers/alankrita.png",
+    "link": "/speakers"
+  },
+  {
+    "name": "Dr. Geethapriyan Thangamani",
+    "title": "Politecnico di Torino, Italy",
+    "affiliation": "",
+    "image": "/images/speakers/geethapriyan.png",
+    "link": "/speakers"
+  },
+  {
+    "name": "Dr. Abhijeet Dhal",
+    "title": "Johns Hopkins University, USA",
+    "affiliation": "",
+    "image": "/images/speakers/abhijeet.png",
+    "link": "/speakers"
+  },
+  {
+    "name": "Dr. Faseeulla Khan Mohammad",
+    "title": "King Faisal University, Saudi Arabia",
+    "affiliation": "",
+    "image": "/images/speakers/faseeulla.png",
+    "link": "/speakers"
+  },
+  {
+    "name": "Dr. Kalpana Kannan",
+    "title": "CMP Process Engineer, Micron Technology Manassas, USA",
+    "affiliation": "",
+    "image": "/images/speakers/kalpana.jpg",
+    "link": "/speakers"
+  }
+]

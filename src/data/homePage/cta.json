@@ -1,0 +1,22 @@
+{
+  "backgroundImage": "/images/cta-background-earth.jpg",
+  "headline": "Join Us",
+  "subheadline": "Collaborate with us to push the frontiers of space technology and turn visionary ideas into reality.",
+  "buttons": [
+    {
+      "text": "View All Projects",
+      "link": "/research",
+      "variant": "primary"
+    },
+    {
+      "text": "Open Positions",
+      "link": "/careers",
+      "variant": "secondary"
+    },
+    {
+      "text": "Contact Us",
+      "link": "/contact",
+      "variant": "secondary"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "logoUrl": "/images/logos/orbi-logo2.png",
+  "brief": "A student-led R&D organization at NERIST, focused on pioneering innovations in aerospace, AI, and beyond.",
+  "address": {
+    "line1": "NERIST, Nirjuli",
+    "line2": "Arunachal Pradesh - 791109, India"
+  },
+  "contact": {
+    "email": "contact@orbi.nerist.ac.in",
+    "phone": "+91 123-456-7890"
+  },
+  "socials": [
+    { "name": "Twitter", "icon": "Twitter", "link": "#" },
+    { "name": "LinkedIn", "icon": "Linkedin", "link": "#" },
+    { "name": "GitHub", "icon": "Github", "link": "#" }
+  ],
+  "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.845132360471!2d93.7402952103896!3d27.12968745063567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3746aa9da1dd1bf1%3A0x3338f788c38d9e9e!2sNorth%20Eastern%20Regional%20Institute%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sin!4v1756158555730!5m2!1sen!2sin" 
+}

@@ -1,0 +1,13 @@
+{
+  "heading": "Welcome to ORBI",
+  "icon": "Layers",
+  "paragraph": "Established in 2025 as a student-led R&D initiative at NERIST, ORBI—Orbital Research & Beyond Innovations—serves as a multidisciplinary incubator for transformative ideas. We bridge the gap between academic theory and real-world application, fostering a culture of curiosity-driven exploration in aerospace, AI, and sustainable technologies to shape the future of innovation in the Northeast and beyond.",
+  "button": {
+    "text": "Learn More About Us",
+    "link": "/about"
+  },
+  "image": {
+    "src": "/images/welcome-graphic.png",
+    "alt": "Abstract graphic of orbital paths"
+  }
+}

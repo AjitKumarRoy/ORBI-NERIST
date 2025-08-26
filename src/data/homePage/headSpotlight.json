@@ -1,0 +1,11 @@
+{
+  "name": "Dr. Aris Thorne",
+  "title": "Principal Investigator, ORBI",
+  "image": "/images/team/pi-photo.jpg",
+  "message": "Our journey into the cosmos is driven by pure curiosity and a relentless pursuit of innovation. At ORBI, we empower the next generation of pioneers to define the future of space exploration.",
+  "socials": [
+    { "name": "LinkedIn", "icon": "Linkedin", "link": "#" },
+    { "name": "Scholar", "icon": "GraduationCap", "link": "#" },
+    { "name": "Twitter", "icon": "Twitter", "link": "#" }
+  ]
+}
