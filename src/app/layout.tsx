@@ -1,13 +1,30 @@
 import "@/styles/globals.css";
 
 import { GoogleAnalytics } from '@/components/GoogleAnalytics';
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Orbitron, Space_Grotesk, Roboto_Condensed } from "next/font/google";
 import { LoadingProvider } from "@/context/LoadingContext";
 import AppContentWrapper from "@/components/AppContentWrapper";
 import type { Metadata } from 'next';
 
-const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
-const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"], variable: '--font-plus-jakarta-sans' });
+const inter = Inter({ 
+  subsets: ["latin"], 
+  variable: '--font-inter' 
+});
+const orbitron = Orbitron({
+  subsets: ['latin'],
+  weight: ['700'],
+  variable: '--font-orbitron',
+});
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-space-grotesk',
+});
+const robotoCondensed = Roboto_Condensed({
+  subsets: ['latin'],
+  weight: ['700'],
+  variable: '--font-roboto-condensed',
+});
 
 // --- UPDATED METADATA OBJECT ---
 export const metadata: Metadata = {
@@ -71,7 +88,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${plusJakartaSans.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${orbitron.variable} ${spaceGrotesk.variable} ${robotoCondensed.variable}`}>
       <body>
         <GoogleAnalytics />
         <LoadingProvider>

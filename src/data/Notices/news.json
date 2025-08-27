@@ -1,242 +1,34 @@
 [
   {
     "id": "news-1",
-    "title": "News 1",
+    "title": "To be updated soon.",
     "date": "2025-08-20",
-    "link": "/news/ai-robotics-grant",
+    "link": "#",
     "image": "/images/rocket.jpg",
-    "excerpt": "Our group has secured a significant grant to further develop AI applications in advanced robotics..."
+    "excerpt": "........"
   },
   {
     "id": "news-2",
-    "title": "News 2",
-    "date": "2025-08-18",
-    "link": "/news/new-research-center",
+    "title": "To be updated soon.",
+    "date": "2025-08-20",
+    "link": "#",
     "image": "/images/rocket.jpg",
-    "excerpt": "A new center focused on sustainable technologies has been inaugurated, fostering collaboration across departments."
+    "excerpt": "........"
   },
   {
     "id": "news-3",
-    "title": "News 3",
-    "date": "2025-08-15",
-    "link": "/news/robotics-champions",
+    "title": "To be updated soon.",
+    "date": "2025-08-20",
+    "link": "#",
     "image": "/images/rocket.jpg",
-    "excerpt": "Our talented student team secured first place in the national collegiate robotics competition with their innovative designs."
+    "excerpt": "........"
   },
   {
     "id": "news-4",
-    "title": "News 4",
-    "date": "2025-08-10",
-    "link": "/news/propulsion-paper",
+    "title": "To be updated soon.",
+    "date": "2025-08-20",
+    "link": "#",
     "image": "/images/rocket.jpg",
-    "excerpt": "Our latest paper on next-generation ion thrusters has been published in the Journal of Spacecraft."
-  },
-  {
-    "id": "news-5",
-    "title": "News 5",
-    "date": "2025-08-05",
-    "link": "/news/keynote-conference",
-    "image": "/images/rocket.jpg",
-    "excerpt": "Dr. Aris Thorne delivered a keynote address at the International Aerospace Symposium on future challenges."
-  },
-  {
-    "id": "news-6",
-    "title": "News 6",
-    "date": "2025-07-28",
-    "link": "/news/orbi-satellite-launch",
-    "image": "/images/rocket.jpg",
-    "excerpt": "ORBI-Sat-1, our first student-built CubeSat, was successfully deployed into low Earth orbit this morning."
-  },
-  {
-    "id": "news-7",
-    "title": "News 7",
-    "date": "2025-07-22",
-    "link": "/news/industry-partnership",
-    "image": "/images/rocket.jpg",
-    "excerpt": "A new strategic partnership with Axiom Industries will accelerate our research in deep space communication."
-  },
-  {
-    "id": "news-8",
-    "title": "News 8",
-    "date": "2025-07-16",
-    "link": "/news/phd-award-winner",
-    "image": "/images/rocket.jpg",
-    "excerpt": "PhD candidate Lena Petrova wins the Best Dissertation Award for her work on orbital mechanics."
-  },
-  {
-    "id": "news-9",
-    "title": "News 9",
-    "date": "2025-07-10",
-    "link": "/news/new-lab-inauguration",
-    "image": "/images/rocket.jpg",
-    "excerpt": "The new Advanced Propulsion and Power Laboratory was inaugurated today by the institute director."
-  },
-  {
-    "id": "news-10",
-    "title": "News 10",
-    "date": "2025-07-02",
-    "link": "/news/hackathon-success",
-    "image": "/images/rocket.jpg",
-    "excerpt": "ORBI hosted a successful 48-hour hackathon on using satellite data for climate change monitoring."
-  },
-  {
-    "id": "news-11",
-    "title": "News 11",
-    "date": "2025-06-25",
-    "link": "/news/publication-materials",
-    "image": "/images/rocket.jpg",
-    "excerpt": "Our research on heat-shielding nanomaterials has been accepted for publication in 'Advanced Materials'."
-  },
-  {
-    "id": "news-12",
-    "title": "News 12",
-    "date": "2025-06-18",
-    "link": "/news/guest-lecture-nasa",
-    "image": "/images/rocket.jpg",
-    "excerpt": "We were honored to host a guest lecture from Dr. R. Chen, a lead engineer from NASA's Jet Propulsion Laboratory."
-  },
-  {
-    "id": "news-13",
-    "title": "News 13",
-    "date": "2025-06-11",
-    "link": "/news/tech-showcase-event",
-    "image": "/images/rocket.jpg",
-    "excerpt": "Our students presented their latest prototypes at the annual Institute of Technology Showcase."
-  },
-  {
-    "id": "news-14",
-    "title": "News 14",
-    "date": "2025-06-04",
-    "link": "/news/alumni-feature",
-    "image": "/images/rocket.jpg",
-    "excerpt": "ORBI alumnus Dr. Kenji Tanaka is featured in 'SpaceTech Monthly' for his work on commercial spaceflight."
-  },
-  {
-    "id": "news-15",
-    "title": "News 15",
-    "date": "2025-05-29",
-    "link": "/news/workshop-announcement",
-    "image": "/images/rocket.jpg",
-    "excerpt": "Registration is now open for our upcoming international workshop on autonomous rover navigation."
-  },
-  {
-    "id": "news-16",
-    "title": "News 16",
-    "date": "2025-05-21",
-    "link": "/news/simulation-software-release",
-    "image": "/images/rocket.jpg",
-    "excerpt": "Version 2.0 of our open-source orbital simulation software has been released to the public."
-  },
-  {
-    "id": "news-17",
-    "title": "News 17",
-    "date": "2025-05-14",
-    "link": "/news/outreach-program",
-    "image": "/images/rocket.jpg",
-    "excerpt": "Our team conducted a STEM outreach program for local high school students, inspiring the next generation."
-  },
-  {
-    "id": "news-18",
-    "title": "News 18",
-    "date": "2025-05-07",
-    "link": "/news/faculty-promotion",
-    "image": "/images/rocket.jpg",
-    "excerpt": "Congratulations to Dr. Emily Carter on her promotion to Associate Professor in Aerospace Engineering."
-  },
-  {
-    "id": "news-19",
-    "title": "News 19",
-    "date": "2025-04-30",
-    "link": "/news/patent-filed",
-    "image": "/images/rocket.jpg",
-    "excerpt": "A new patent has been filed for our innovative satellite battery management system."
-  },
-  {
-    "id": "news-20",
-    "title": "News 20",
-    "date": "2025-04-22",
-    "link": "/news/earth-day-initiative",
-    "image": "/images/rocket.jpg",
-    "excerpt": "In honor of Earth Day, our remote sensing team released new data on regional deforestation trends."
-  },
-  {
-    "id": "news-21",
-    "title": "News 21",
-    "date": "2025-04-15",
-    "link": "/news/conference-presentations",
-    "image": "/images/rocket.jpg",
-    "excerpt": "Several of our researchers presented their findings at the IEEE Aerospace Conference this past week."
-  },
-  {
-    "id": "news-22",
-    "title": "News 22",
-    "date": "2025-04-08",
-    "link": "/news/new-hpc-cluster",
-    "image": "/images/rocket.jpg",
-    "excerpt": "A new high-performance computing cluster is now online, enabling more complex simulations."
-  },
-  {
-    "id": "news-23",
-    "title": "News 23",
-    "date": "2025-04-01",
-    "link": "/news/collaboration-esa",
-    "image": "/images/rocket.jpg",
-    "excerpt": "ORBI is collaborating with the European Space Agency (ESA) on a new orbital debris tracking project."
-  },
-  {
-    "id": "news-24",
-    "title": "News 24",
-    "date": "2025-03-25",
-    "link": "/news/student-scholarship",
-    "image": "/images/rocket.jpg",
-    "excerpt": "Graduate student David Chen has been awarded the prestigious Zenith Aerospace Scholarship."
-  },
-  {
-    "id": "news-25",
-    "title": "News 25",
-    "date": "2025-03-18",
-    "link": "/news/ai-model-training",
-    "image": "/images/rocket.jpg",
-    "excerpt": "Our new AI model for predicting solar flare activity has completed its initial training phase."
-  },
-  {
-    "id": "news-26",
-    "title": "News 26",
-    "date": "2025-03-11",
-    "link": "/news/robotics-lab-upgrade",
-    "image": "/images/rocket.jpg",
-    "excerpt": "The robotics laboratory has received a major upgrade with new 3D printing and manufacturing capabilities."
-  },
-  {
-    "id": "news-27",
-    "title": "News 27",
-    "date": "2025-03-04",
-    "link": "/news/research-feature-magazine",
-    "image": "/images/rocket.jpg",
-    "excerpt": "Our work in sustainable rocket fuels was featured in the latest issue of 'Future Tech Magazine'."
-  },
-  {
-    "id": "news-28",
-    "title": "News 28",
-    "date": "2025-02-26",
-    "link": "/news/welcome-visiting-scholar",
-    "image": "/images/rocket.jpg",
-    "excerpt": "We are pleased to welcome Dr. Isabella Rossi from the Italian Space Agency as a visiting scholar."
-  },
-  {
-    "id": "news-29",
-    "title": "News 29",
-    "date": "2025-02-19",
-    "link": "/news/data-release",
-    "image": "/images/rocket.jpg",
-    "excerpt": "The first dataset from the ORBI-Sat-1 mission has been made publicly available to the research community."
-  },
-  {
-    "id": "news-30",
-    "title": "News 30",
-    "date": "2025-02-12",
-    "link": "/news/symposium-announcement",
-    "image": "/images/rocket.jpg",
-    "excerpt": "Announcing the 1st Annual ORBI Research Symposium, call for papers is now open."
+    "excerpt": "........"
   }
 ]

@@ -59,3 +59,49 @@
     "description": "Join our interdisciplinary team to work on cutting-edge research in AI ethics and societal impact. Immediate opening available."
   }
 ]
+
+
+// Latest News & Updates
+[
+  {
+    "id": "news-1",
+    "title": "News 1",
+    "date": "2025-08-20",
+    "link": "/news/ai-robotics-grant",
+    "image": "/images/rocket.jpg",
+    "excerpt": "Our group has secured a significant grant to further develop AI applications in advanced robotics..."
+  },
+  {
+    "id": "news-2",
+    "title": "News 2",
+    "date": "2025-08-18",
+    "link": "/news/new-research-center",
+    "image": "/images/rocket.jpg",
+    "excerpt": "A new center focused on sustainable technologies has been inaugurated, fostering collaboration across departments."
+  }
+]
+
+
+
+
+// Our Innovations & Research Projects
+
+
+
+
+
+
+
+// Recent Publications
+[
+  {
+    "id": "pub1",
+    "title": "To be updated soon.",
+    "authors": ["Dr. Aris Thorne", "Priya Sharma"],
+    "journalOrConference": "Journal of Spacecraft and Rockets, Vol. 62(4)",
+    "year": 2025,
+    "abstract": "This paper presents a novel electric propulsion system for CubeSats, utilizing a hall-effect thruster that offers unprecedented efficiency and thrust-to-power ratio for small satellite platforms.",
+    "link": "#",
+    "image": "/images/engine.avif"
+  }
+]

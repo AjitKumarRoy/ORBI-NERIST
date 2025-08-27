@@ -1,8 +1,8 @@
 [
   {
     "id": "pub1",
-    "title": "Publication 1",
-    "authors": ["Dr. Aris Thorne", "Priya Sharma"],
+    "title": "To be updated soon.",
+    "authors": ["", ""],
     "journalOrConference": "Journal of Spacecraft and Rockets, Vol. 62(4)",
     "year": 2025,
     "abstract": "This paper presents a novel electric propulsion system for CubeSats, utilizing a hall-effect thruster that offers unprecedented efficiency and thrust-to-power ratio for small satellite platforms.",
@@ -11,291 +11,31 @@
   },
   {
     "id": "pub2",
-    "title": "Publication 2",
-    "authors": ["Dr. Lena Petrova", "David Chen", "Dr. Kenji Tanaka"],
-    "journalOrConference": "IEEE Transactions on Artificial Intelligence, Vol. 36(5)",
+    "title": "To be updated soon.",
+    "authors": ["", ""],
+    "journalOrConference": "Journal of Spacecraft and Rockets, Vol. 62(4)",
     "year": 2025,
-    "abstract": "We introduce a deep reinforcement learning framework for autonomous trajectory optimization of interplanetary spacecraft, significantly reducing fuel consumption and mission time.",
+    "abstract": "This paper presents a novel electric propulsion system for CubeSats, utilizing a hall-effect thruster that offers unprecedented efficiency and thrust-to-power ratio for small satellite platforms.",
     "link": "#",
     "image": "/images/engine.avif"
   },
   {
     "id": "pub3",
-    "title": "Publication 3",
-    "authors": ["Priya Sharma", "Dr. Kenji Tanaka"],
-    "journalOrConference": "Nature Materials, Vol. 24(8)",
+    "title": "To be updated soon.",
+    "authors": ["", ""],
+    "journalOrConference": "Journal of Spacecraft and Rockets, Vol. 62(4)",
     "year": 2025,
-    "abstract": "A breakthrough in the synthesis of self-healing graphene composites for thermal shielding applications in high-velocity atmospheric reentry.",
+    "abstract": "This paper presents a novel electric propulsion system for CubeSats, utilizing a hall-effect thruster that offers unprecedented efficiency and thrust-to-power ratio for small satellite platforms.",
     "link": "#",
     "image": "/images/engine.avif"
   },
   {
     "id": "pub4",
-    "title": "Publication 4",
-    "authors": ["David Chen", "Dr. Aris Thorne"],
-    "journalOrConference": "Journal of Quantum Computing, Vol. 15(2)",
-    "year": 2024,
-    "abstract": "This work details the implementation of quantum communication protocols for creating unconditionally secure satellite networks.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub5",
-    "title": "Publication 5",
-    "authors": ["Dr. Lena Petrova"],
-    "journalOrConference": "Robotics and Autonomous Systems, Vol. 178",
-    "year": 2024,
-    "abstract": "A novel SLAM (Simultaneous Localization and Mapping) algorithm for autonomous rover navigation in unstructured and GPS-denied environments.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub6",
-    "title": "Publication 6",
-    "authors": ["Dr. Kenji Tanaka", "Priya Sharma"],
-    "journalOrConference": "Solar Energy Materials and Solar Cells, Vol. 270",
-    "year": 2024,
-    "abstract": "Development of multi-junction, high-efficiency solar cells with enhanced radiation resistance for long-duration deep space probes.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub7",
-    "title": "Publication 7",
-    "authors": ["Dr. Aris Thorne", "David Chen"],
-    "journalOrConference": "Acta Astronautica, Vol. 210",
-    "year": 2024,
-    "abstract": "Analysis of orbital decay and station-keeping maneuvers for large satellite constellations in very low Earth orbit (VLEO).",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub8",
-    "title": "Publication 8",
-    "authors": ["Priya Sharma"],
-    "journalOrConference": "Journal of Materials Science, Vol. 59",
-    "year": 2024,
-    "abstract": "Investigating the effects of atomic oxygen on polymer composites in the LEO environment to improve spacecraft longevity.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub9",
-    "title": "Publication 9",
-    "authors": ["Dr. Lena Petrova", "David Chen"],
-    "journalOrConference": "IEEE Transactions on Geoscience and Remote Sensing, Vol. 61",
-    "year": 2023,
-    "abstract": "A machine learning approach to fusing hyperspectral and LiDAR data for enhanced environmental monitoring from orbit.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub10",
-    "title": "Publication 10",
-    "authors": ["Dr. Kenji Tanaka"],
-    "journalOrConference": "Proceedings of the International Astronautical Congress",
-    "year": 2023,
-    "abstract": "Design and simulation of a modular, scalable power management system for next-generation space stations.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub11",
-    "title": "Publication 11",
-    "authors": ["Dr. Aris Thorne"],
-    "journalOrConference": "Journal of Propulsion and Power, Vol. 39(4)",
-    "year": 2023,
-    "abstract": "A comparative study of chemical and electric propulsion for lunar gateway and cis-lunar missions.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub12",
-    "title": "Publication 12",
-    "authors": ["Priya Sharma", "Dr. Lena Petrova"],
-    "journalOrConference": "Journal of Biomechanics, Vol. 150",
-    "year": 2023,
-    "abstract": "Development of biocompatible, 3D-printed scaffolds for tissue engineering in microgravity environments.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub13",
-    "title": "Publication 13",
-    "authors": ["David Chen"],
-    "journalOrConference": "IEEE Aerospace and Electronic Systems Magazine, Vol. 38(2)",
-    "year": 2023,
-    "abstract": "An overview of virtual reality applications in the design and verification process of complex satellite systems.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub14",
-    "title": "Publication 14",
-    "authors": ["Dr. Kenji Tanaka", "Dr. Aris Thorne"],
-    "journalOrConference": "Journal of Guidance, Control, and Dynamics, Vol. 46(1)",
-    "year": 2023,
-    "abstract": "Advanced control algorithms for autonomous satellite docking and formation flying.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub15",
-    "title": "Publication 15",
-    "authors": ["Dr. Lena Petrova"],
-    "journalOrConference": "Remote Sensing of Environment, Vol. 285",
-    "year": 2023,
-    "abstract": "Utilizing satellite-based remote sensing to monitor Arctic ice melt and its impact on global sea levels.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub16",
-    "title": "Publication 16",
-    "authors": ["Priya Sharma"],
-    "journalOrConference": "Composites Part B: Engineering, Vol. 248",
-    "year": 2022,
-    "abstract": "Fabrication and testing of carbon nanotube-reinforced polymers for lightweight structural components in aerospace.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub17",
-    "title": "Publication 17",
-    "authors": ["David Chen", "Dr. Lena Petrova"],
-    "journalOrConference": "Journal of Field Robotics, Vol. 39(8)",
-    "year": 2022,
-    "abstract": "A path planning algorithm for rovers that combines terrain analysis with mission-critical objectives.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub18",
-    "title": "Publication 18",
-    "authors": ["Dr. Aris Thorne"],
-    "journalOrConference": "Journal of Spacecraft and Rockets, Vol. 59(6)",
-    "year": 2022,
-    "abstract": "Thermal analysis and management of high-power electric propulsion systems for long-duration missions.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub19",
-    "title": "Publication 19",
-    "authors": ["Dr. Kenji Tanaka"],
-    "journalOrConference": "IEEE Antennas and Wireless Propagation Letters, Vol. 21(10)",
-    "year": 2022,
-    "abstract": "Design of a novel phased-array antenna for high-throughput satellite communication.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub20",
-    "title": "Publication 20",
-    "authors": ["Dr. Lena Petrova", "Priya Sharma"],
-    "journalOrConference": "Journal of Applied Physics, Vol. 132(1)",
-    "year": 2022,
-    "abstract": "Investigating the use of metamaterials for advanced optical sensors in remote sensing applications.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub21",
-    "title": "Publication 21",
-    "authors": ["David Chen", "Dr. Aris Thorne"],
-    "journalOrConference": "Advances in Space Research, Vol. 69(6)",
-    "year": 2022,
-    "abstract": "A model for predicting orbital debris collision risks for large satellite constellations.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub22",
-    "title": "Publication 22",
-    "authors": ["Priya Sharma"],
-    "journalOrConference": "Materials Today, Vol. 52",
-    "year": 2022,
-    "abstract": "A review of additive manufacturing techniques for producing complex components for space applications.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub23",
-    "title": "Publication 23",
-    "authors": ["Dr. Kenji Tanaka", "David Chen"],
-    "journalOrConference": "IEEE Transactions on Aerospace and Electronic Systems, Vol. 58(1)",
-    "year": 2022,
-    "abstract": "A robust fault detection and isolation system for satellite onboard computers.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub24",
-    "title": "Publication 24",
-    "authors": ["Dr. Lena Petrova"],
-    "journalOrConference": "Journal of Artificial Intelligence, Vol. 80",
-    "year": 2021,
-    "abstract": "An unsupervised machine learning model for identifying anomalous patterns in satellite telemetry data.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub25",
-    "title": "Publication 25",
-    "authors": ["Dr. Aris Thorne"],
-    "journalOrConference": "Journal of Propulsion and Power, Vol. 37(5)",
-    "year": 2021,
-    "abstract": "Experimental investigation of plasma plume characteristics in low-power Hall thrusters.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub26",
-    "title": "Publication 26",
-    "authors": ["David Chen", "Priya Sharma"],
-    "journalOrConference": "Proceedings of the IEEE VR Conference",
-    "year": 2021,
-    "abstract": "A collaborative virtual reality platform for multi-user mission planning and simulation.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub27",
-    "title": "Publication 27",
-    "authors": ["Dr. Kenji Tanaka"],
-    "journalOrConference": "Space Policy, Vol. 56",
-    "year": 2021,
-    "abstract": "An analysis of the policy implications of large-scale satellite constellation deployment.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub28",
-    "title": "Publication 28",
-    "authors": ["Dr. Lena Petrova"],
-    "journalOrConference": "Sensors, Vol. 21(4)",
-    "year": 2021,
-    "abstract": "Calibration and validation of next-generation thermal imaging sensors for Earth observation satellites.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub29",
-    "title": "Publication 29",
-    "authors": ["Priya Sharma", "Dr. Aris Thorne"],
-    "journalOrConference": "Journal of Materials Research, Vol. 36(2)",
-    "year": 2021,
-    "abstract": "Investigating the long-term effects of space radiation on advanced composite materials.",
-    "link": "#",
-    "image": "/images/engine.avif"
-  },
-  {
-    "id": "pub30",
-    "title": "Publication 30",
-    "authors": ["David Chen", "Dr. Lena Petrova", "Dr. Kenji Tanaka"],
-    "journalOrConference": "Journal of Autonomous Robots, Vol. 45(1)",
-    "year": 2021,
-    "abstract": "A framework for multi-robot coordination and task allocation for planetary exploration.",
+    "title": "To be updated soon.",
+    "authors": ["", ""],
+    "journalOrConference": "Journal of Spacecraft and Rockets, Vol. 62(4)",
+    "year": 2025,
+    "abstract": "This paper presents a novel electric propulsion system for CubeSats, utilizing a hall-effect thruster that offers unprecedented efficiency and thrust-to-power ratio for small satellite platforms.",
     "link": "#",
     "image": "/images/engine.avif"
   }

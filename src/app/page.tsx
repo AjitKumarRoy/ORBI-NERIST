@@ -10,7 +10,7 @@ import { LatestNews } from '@/components/homePage/LatestNews';
 import { TeamSection } from "@/components/homePage/TeamSection";
 import { LatestProjects } from '@/components/homePage/LatestProjects';
 import { RecentPublications } from '@/components/homePage/RecentPublications';
-import { Collaborators } from '@/components/homePage/Collaborators';
+// import { Collaborators } from '@/components/homePage/Collaborators';
 import { FaqAndCTA } from '@/components/homePage/FaqAndCTA';
 
 
@@ -90,7 +90,7 @@ export default function Homepage() {
       <TeamSection />
       <LatestProjects />
       <RecentPublications />
-      <Collaborators />
+      {/* <Collaborators /> */}
       <FaqAndCTA />
     </div>
     </>
