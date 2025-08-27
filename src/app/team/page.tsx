@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { TeamPageClient } from '@/components/teamPage/TeamPageClient';
 import teamPageInfo from '@/data/teamPage/team.json';
 import coreMembersData from '@/data/teamPage/coreMembers.json';
-import studentMembersData from '@/data/teamPage/studentMembers.json';
+// import studentMembersData from '@/data/teamPage/studentMembers.json';
 
 
 // --- NEW, CORRECTED METADATA FOR THE TEAM PAGE ---
@@ -57,7 +57,7 @@ export default function TeamPage() {
       <TeamPageClient 
         hero={teamPageInfo.hero} 
         coreMembers={coreMembersData} 
-        studentMembers={studentMembersData} 
+        // studentMembers={studentMembersData} 
       />
     </>
   );
