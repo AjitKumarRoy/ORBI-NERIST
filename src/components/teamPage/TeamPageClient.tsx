@@ -3,8 +3,9 @@
 import { PageHero } from '@/components/ui/PageHero';
 import { CoreTeam } from '@/components/teamPage/CoreTeam';
 // import { StudentMembers } from '@/components/teamPage/StudentMembers';
+import { HeroData, TeamMember } from '@/types'
 
-export function TeamPageClient({ hero, coreMembers, studentMembers }: { hero: any, coreMembers: any[], studentMembers: any[] }) {
+export function TeamPageClient({ hero, coreMembers }: { hero: HeroData, coreMembers: TeamMember[] }) {
   // The useMemo filtering is no longer needed here
 
   return (

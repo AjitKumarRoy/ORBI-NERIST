@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Section } from '@/components/ui/Section';
 import { Title } from '@/components/ui/Title';
 import { Users } from 'lucide-react';
+import { TeamMember } from '@/types';
 
 // Animation variants for the list container
 const listContainerVariants = {
@@ -20,7 +21,7 @@ const listItemVariants = {
     visible: { opacity: 1, x: 0 },
 };
 
-export const StudentMembers = ({ members }: { members: any[] }) => {
+export const StudentMembers = ({ members }: { members: TeamMember[] }) => {
   return (
     // Wrapped in the reusable Section component
     <Section>
