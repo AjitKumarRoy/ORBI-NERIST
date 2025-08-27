@@ -1,13 +1,9 @@
 {
   "heading": "Welcome to ORBI",
   "icon": "Layers",
-  "paragraph": "Established in 2025 as a student-led R&D initiative at NERIST, ORBI—Orbital Research & Beyond Innovations—serves as a multidisciplinary incubator for transformative ideas. We bridge the gap between academic theory and real-world application, fostering a culture of curiosity-driven exploration in aerospace, AI, and sustainable technologies to shape the future of innovation in the Northeast and beyond.",
+  "paragraph": "Greetings and welcome to ORBI: Orbital Research & Beyond Innovations! We are a dynamic, student-led research group at NERIST, dedicated to shaping the future of space technology. Our work orbits at the intersection of Aerospace Engineering, Artificial Intelligence, and Robotics. Through rigorous interdisciplinary collaboration and a commitment to pushing beyond conventional thinking, we develop cutting-edge solutions to real-world challenges. We invite you to explore our projects, discover our research, and learn how you can be a part of our exciting journey to the frontiers of science and technology.",
   "button": {
     "text": "Learn More About Us",
     "link": "/about"
-  },
-  "image": {
-    "src": "/images/welcome-graphic.png",
-    "alt": "Abstract graphic of orbital paths"
   }
 }

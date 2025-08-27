@@ -105,7 +105,7 @@ export function AnnouncementRecruitment() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         />
 
-        <Tab.Panels ref={panelRef} className="space-y-4 max-h-[350px] overflow-y-auto pr-2 custom-scrollbar">
+        <Tab.Panels ref={panelRef} className="space-y-4 h-[350px] overflow-y-auto pr-2 custom-scrollbar">
           {tabs.map((tab) => (
             <Tab.Panel key={tab.name} className="focus:outline-none">
               <div className="space-y-2">
@@ -145,7 +145,7 @@ export function AnnouncementRecruitment() {
                     );
                   })
                 ) : (
-                  <p className="p-4 text-center text-slate-400">No {tab.name.toLowerCase()} found.</p>
+                  <p className="p-4 text-center text-slate-400">No {tab.name.toLowerCase()} available.</p>
                 )}
               </div>
             </Tab.Panel>
@@ -160,17 +160,20 @@ export function AnnouncementRecruitment() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         />
 
-        {/* --- "VIEW ALL" BUTTON --- */}
-        <div className="text-center mt-6">
+        {/* --- "VIEW ALL" BUTTON WITH CONDITIONAL LOGIC --- */}
+        {/* This button will only show if the current tab has data */}
+        {tabs[selectedIndex].data.length > 0 && (
+          <div className="text-center mt-6">
             <Button
-            href={tabs[selectedIndex].link}
-            variant="secondary"
-            className="inline-flex"
-          >
-            <span>View All {tabs[selectedIndex].name}</span>
-            <FaArrowRight />
-          </Button>
-        </div>
+              href={tabs[selectedIndex].link}
+              variant="secondary"
+              className="inline-flex"
+            >
+              <span>View All {tabs[selectedIndex].name}</span>
+              <FaArrowRight />
+            </Button>
+          </div>
+        )}
         
       </Tab.Group>
     </div>

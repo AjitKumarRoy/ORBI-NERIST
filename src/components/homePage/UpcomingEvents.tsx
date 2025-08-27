@@ -19,11 +19,16 @@ const formatDate = (dateString: string) => {
 };
 
 export function UpcomingEvents() {
-  // Filter and sort the data from the single notices file
   const upcomingEvents = useMemo(() => {
+    // Get the exact time now
     const now = new Date();
-     return eventsData
-      .filter(event => new Date(event.date).getTime() >= now.getTime())
+    
+    // Create a new date object representing the beginning of today (midnight)
+    const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+    return eventsData
+      // Compare the event date with the start of today
+      .filter(event => new Date(event.date).getTime() >= startOfToday.getTime())
       .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
       .slice(0, 20);
   }, []);
@@ -45,7 +50,7 @@ export function UpcomingEvents() {
       {/* --- END OF DIVIDER --- */}
       
 
-      <div className="space-y-4 max-h-[350px] overflow-y-auto pr-2 custom-scrollbar">
+      <div className="space-y-4 h-[350px] overflow-y-auto pr-2 custom-scrollbar">
         {upcomingEvents.length > 0 ? (
             upcomingEvents.map((event, index) => (
           <motion.div
@@ -81,7 +86,7 @@ export function UpcomingEvents() {
           </motion.div>
         ))
         ) : (
-          <p className="p-4 text-center text-slate-400">No upcoming events.</p>
+          <p className="p-4 text-center text-slate-400">No events available.</p>
         )}
       </div>
 
@@ -94,12 +99,15 @@ export function UpcomingEvents() {
       />
       {/* --- END OF DIVIDER --- */}
 
-       <div className="text-center mt-6">
-         <Button href="/events" variant="secondary" className="inline-flex">
-            <span>View All Events</span>
-            <FaArrowRight />
-          </Button>
-      </div>
+       {/* --- THIS BUTTON IS NOW CONDITIONAL --- */}
+      {upcomingEvents.length > 0 && (
+        <div className="text-center mt-6">
+            <Button href="/events" variant="secondary" className="inline-flex">
+              <span>View All Events</span>
+              <FaArrowRight />
+            </Button>
+        </div>
+      )}
 
     </div>
   );

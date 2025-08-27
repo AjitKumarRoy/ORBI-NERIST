@@ -1,0 +1,61 @@
+// Upcoming events format
+[
+  {
+    "id": "event-1",
+    "title": "Event 1",
+    "date": "2025-06-15",
+    "link": "#",
+    "location": "Main Auditorium",
+    "description": "Our annual convocation ceremony celebrating the achievements of our graduating class."
+  },
+  {
+    "id": "event-2",
+    "title": "Event 2",
+    "date": "2025-06-16",
+    "link": "#",
+    "location": "Main Auditorium",
+    "description": "Our annual convocation ceremony celebrating the achievements of our graduating class."
+  }
+]
+
+
+
+
+// Announcements format
+[
+  {
+    "id": "announcement-1",
+    "title": "Announcement 1",
+    "date": "2025-06-01",
+    "link": "#",
+    "description": "Applications are invited for Post-Doctoral Fellowships under the Visvesvaraya PhD Scheme. Detailed guidelines and eligibility criteria are available via the link."
+  },
+  {
+    "id": "announcement-2",
+    "title": "Announcement 2",
+    "date": "2025-06-02",
+    "link": "#",
+    "description": "Important information for all newly admitted undergraduate, postgraduate, and PhD students joining in July 2025. Includes orientation schedules and registration details."
+  }
+]
+
+
+
+
+// Recruitments format
+[
+  {
+    "id": "recruit-1",
+    "title": "Administrative Assistant Vacancy - Registrar's Office",
+    "date": "2025-06-15",
+    "link": "/careers/admin-registrar",
+    "description": "Opportunity for a skilled administrative professional to join our central administration team. Preference for candidates with university experience."
+  },
+  {
+    "id": "recruit-2",
+    "title": "Research Associate for AI Ethics Project",
+    "date": "2025-06-28",
+    "link": "/careers/research-ai",
+    "description": "Join our interdisciplinary team to work on cutting-edge research in AI ethics and societal impact. Immediate opening available."
+  }
+]
