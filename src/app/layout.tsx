@@ -1,31 +1,78 @@
-// FILE: src/app/layout.tsx
 import { GoogleAnalytics } from '@/components/GoogleAnalytics';
 import "@/styles/globals.css";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
-// Removed direct imports for Navbar, Footer, InitialLoader, NotificationBar, BannerSection
-// as they are now managed by AppContentWrapper
-import { LoadingProvider } from "@/context/LoadingContext"; // Keep LoadingProvider
-import AppContentWrapper from "@/components/AppContentWrapper"; // Import the new wrapper component
+import { LoadingProvider } from "@/context/LoadingContext";
+import AppContentWrapper from "@/components/AppContentWrapper";
+import type { Metadata } from 'next';
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"], variable: '--font-plus-jakarta-sans' });
 
-export const metadata = {
-  title: "SMART'25",
-  description: "4th International Conference on Sustainable Multidisciplinary Artificial Intelligence Research for Global Transformations - 2025",
+// --- UPDATED METADATA OBJECT ---
+export const metadata: Metadata = {
+  // --- Core Metadata ---
+   title: {
+    default: 'ORBI: Orbital Research & Beyond Innovations',
+    template: '%s | ORBI', // %s will be replaced by the page-specific title
+  },
+  description: "ORBI is a multidisciplinary research group at NERIST dedicated to pioneering sustainable innovations through cutting-edge research in Artificial Intelligence, Aerospace, and Robotics.",
+  
+  // --- SEO Keywords ---
+  keywords: ['ORBI', 'Orbital Research', 'NERIST', 'Aerospace Engineering', 'Artificial Intelligence', 'Robotics', 'Sustainable Technology', 'Research and Development'],
+  
+  // --- Author & Publisher ---
+  authors: [{ name: 'ORBI - NERIST', url: 'https://orbi.nerist.ac.in' }],
+  creator: 'ORBI',
+  publisher: 'North Eastern Regional Institute of Science and Technology',
 
-   // --- ADD THIS LINE FOR THE APPLE MOBILE WEB APP TITLE ---
+  // --- Open Graph for Social Media (LinkedIn, Facebook, etc.) ---
+  openGraph: {
+    title: 'ORBI: Orbital Research & Beyond Innovations',
+    description: 'A multidisciplinary research group pioneering sustainable innovations in AI, Aerospace, and Robotics.',
+    url: 'https://orbi.nerist.ac.in',
+    siteName: 'ORBI',
+    images: [
+      {
+        url: '/og-image.png', // Your preview image
+        width: 1200,
+        height: 630,
+        alt: 'ORBI Research Group Logo and Title',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+
+  // --- Twitter Card ---
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ORBI: Orbital Research & Beyond Innovations',
+    description: 'A multidisciplinary research group pioneering sustainable innovations in AI, Aerospace, and Robotics.',
+    images: ['/og-image.png'], // Your preview image
+  },
+
+  // --- Icons & Manifest ---
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/icon1.png',
+    apple: '/apple-icon.png',
+  },
+  manifest: '/manifest.json',
+
+  // --- Apple Mobile Web App Title ---
   appleWebApp: {
-    title: "smart'25",
+    title: "ORBI",
+    capable: true,
+    statusBarStyle: "black-translucent",
   },
 };
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${plusJakartaSans.variable}`}>
       <body>
         <GoogleAnalytics />
-        {/* Wrap the entire AppContentWrapper with LoadingProvider */}
         <LoadingProvider>
           <AppContentWrapper>{children}</AppContentWrapper>
         </LoadingProvider>
