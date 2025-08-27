@@ -1,10 +1,9 @@
-// FILE: src/components/SearchBar.tsx
 "use client";
-import { useEffect, useState, useRef, useMemo } from "react"; // Added useMemo for fuse
+import { useEffect, useState, useRef, useMemo } from "react";
 import Fuse from "fuse.js";
-import searchData from "@/../public/searchIndex.json"; // Assuming this path is correct
+import searchData from "@/../public/searchIndex.json";
 import Link from "next/link";
-import { FiX } from "react-icons/fi"; // Added FiX for close button
+import { FiX } from "react-icons/fi";
 
 interface SearchBarProps {
   onClose: () => void;
@@ -19,17 +18,15 @@ interface SearchResult {
 const SearchBar = ({ onClose }: SearchBarProps) => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
-  const searchBarContentRef = useRef<HTMLDivElement>(null); // Ref for the actual search input/results container
+  const searchBarContentRef = useRef<HTMLDivElement>(null);
 
-  // Fuse.js setup - use useMemo to ensure fuse object is stable and only re-created if searchData changes
   const fuse = useMemo(() => {
     return new Fuse(searchData, {
       keys: ["title", "description"],
       threshold: 0.3,
     });
-  }, []); // Dependency on searchData, which is imported and should be stable
+  }, []);
 
-  // Handle search query changes
   useEffect(() => {
     if (query.trim() === "") {
       setResults([]);
@@ -37,9 +34,8 @@ const SearchBar = ({ onClose }: SearchBarProps) => {
       const searchResults = fuse.search(query).map((r) => r.item as SearchResult);
       setResults(searchResults);
     }
-  }, [query, fuse]); // <--- ADDED 'fuse' HERE to resolve the warning
+  }, [query, fuse]);
 
-  // Handle clicks outside the search bar content to close it
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -49,17 +45,12 @@ const SearchBar = ({ onClose }: SearchBarProps) => {
         onClose();
       }
     };
-
-    // Add event listener when the component mounts
     document.addEventListener("mousedown", handleClickOutside);
-
-    // Clean up event listener when the component unmounts
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [onClose]); // Re-run if onClose function changes
+  }, [onClose]);
 
-  // Optional: close search on Escape key press
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
@@ -71,18 +62,17 @@ const SearchBar = ({ onClose }: SearchBarProps) => {
   }, [onClose]);
 
   return (
-    // This outer div now acts as the full-screen overlay backdrop
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100]"> {/* Higher z-index to be on top */}
-      {/* This inner div is the actual search bar content, centered on the screen */}
+    <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-[100]">
       <div
-        ref={searchBarContentRef} // Attach ref to the content container
-        className="relative mx-auto mt-20 w-11/12 max-w-lg bg-white dark:bg-gray-900 shadow-xl rounded-lg p-5" // Adjusted width and centering
-        // Important: Stop propagation for clicks within this content area
+        ref={searchBarContentRef}
+        // --- UPDATED CARD STYLING ---
+        className="relative mx-auto mt-20 w-11/12 max-w-lg rounded-2xl border border-white/10 bg-slate-900/80 p-5 shadow-2xl backdrop-blur-xl"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* --- UPDATED CLOSE BUTTON --- */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 p-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+          className="absolute top-3 right-3 h-8 w-8 flex items-center justify-center rounded-full text-slate-400 transition-colors duration-200 hover:bg-slate-800 hover:text-cyan-400 mt-3 mr-3"
           aria-label="Close search"
         >
           <FiX className="text-2xl" />
@@ -90,32 +80,34 @@ const SearchBar = ({ onClose }: SearchBarProps) => {
 
         <input
           type="text"
-          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"
+          // --- UPDATED INPUT STYLING ---
+          className="w-full rounded-md border-transparent bg-slate-800/50 px-4 py-2 text-slate-100 placeholder:text-slate-500 focus:border-cyan-500 focus:ring-cyan-500"
           placeholder="Search the site..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          autoFocus // Automatically focus the input when the search bar opens
+          autoFocus
         />
-        <ul className="mt-4 max-h-80 overflow-y-auto custom-scrollbar"> {/* Increased max-height, added custom-scrollbar (needs Tailwind config) */}
+        <ul className="mt-4 max-h-80 overflow-y-auto custom-scrollbar">
           {results.map((item, index) => (
-            <li key={index} className="border-b border-gray-200 dark:border-gray-700 last:border-b-0">
+            <li key={index} className="border-b border-slate-800 last:border-b-0">
               <Link
                 href={item.url}
-                className="block px-3 py-2 text-gray-800 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-800 rounded transition-colors duration-200"
-                onClick={onClose} // Close search bar when a result link is clicked
+                // --- UPDATED LINK STYLING ---
+                className="block rounded px-3 py-2 text-slate-200 transition-colors duration-200 hover:bg-slate-800 group"
+                onClick={onClose}
               >
-                <h3 className="font-medium text-blue-600 dark:text-blue-400">{item.title}</h3>
+                <h3 className="font-semibold text-white group-hover:text-cyan-400">{item.title}</h3>
                 {item.description && (
-                  <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-1">{item.description}</p>
+                  <p className="text-sm text-slate-400 line-clamp-1">{item.description}</p>
                 )}
               </Link>
             </li>
           ))}
           {query && results.length === 0 && (
-            <li className="text-sm text-gray-500 px-3 py-2">No results found for &quot;{query}&quot;.</li>
+            <li className="px-3 py-2 text-sm text-slate-500">No results found for &quot;{query}&quot;.</li>
           )}
           {!query && results.length === 0 && (
-            <li className="text-sm text-gray-500 px-3 py-2">Start typing to search...</li>
+            <li className="px-3 py-2 text-sm text-slate-500">Start typing to search...</li>
           )}
         </ul>
       </div>
