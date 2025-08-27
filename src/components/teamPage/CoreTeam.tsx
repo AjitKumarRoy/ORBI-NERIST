@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Section } from '@/components/ui/Section';
 import { Title } from '@/components/ui/Title';
 import { Users } from 'lucide-react';
+import { TeamMember } from '@/types';
 
 const getInitials = (name: string): string => {
   const cleanedName = name.replace(/^(Dr\.|Prof\.|Mr\.|Ms\.)\s*/, '');
@@ -26,7 +27,7 @@ const cardVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
-export const CoreTeam = ({ members }: { members: any[] }) => {
+export const CoreTeam = ({ members }: { members: TeamMember[] }) => {
   return (
     // Now wrapped in the reusable Section component
     <Section>
