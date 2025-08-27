@@ -2,114 +2,92 @@ import { Metadata } from 'next';
 
 // Import Section Components
 import { HeroSection } from '@/components/homePage/HeroSection';
+import { WelcomeSection } from '@/components/homePage/WelcomeSection';
+import { MissionSection } from '@/components/homePage/MissionSection';
 import { LatestNewsTicker } from '@/components/homePage/LatestNewsTicker';
 import { Notices } from '@/components/homePage/Notices';
-import { AboutSection } from '@/components/homePage/AboutSection';
 import { ResearchThemes } from '@/components/homePage/ResearchThemes';
-import { LatestNews } from '@/components/homePage/LatestNews';
 import { TeamSection } from "@/components/homePage/TeamSection";
 import { LatestProjects } from '@/components/homePage/LatestProjects';
 import { RecentPublications } from '@/components/homePage/RecentPublications';
 import { Collaborators } from '@/components/homePage/Collaborators';
 import { FaqAndCTA } from '@/components/homePage/FaqAndCTA';
 
-
-
-// --- SEO Optimization: Updated Metadata ---
+// --- NEW, CORRECTED METADATA FOR ORBI ---
 export const metadata: Metadata = {
-  title: "SMART-25 AI Conference | Sustainable Tech & SDGs | Nov 21-22, 2025",
-  description: "Join SMART-25, the 4th International Conference on AI for Sustainable Development Goals. Submit your paper for this premier hybrid event at Villa College, Maldives.",
-  keywords: ["Scopus indexed conference", "Scopus indexed journal", "AI conference 2025", "sustainable technology", "SDGs", "machine learning conference", "SMART-25", "SMART 25", "SMART 2025", "IIT Bhilai","Villa College", "St. Mother Theresa Engineering College", "international conference India", "paper submission", "AI research"],
-  alternates: {
-    canonical: "https://smart25.org/", // Replace with your actual domain
+  title: {
+    default: 'ORBI: Orbital Research & Beyond Innovations',
+    template: '%s | ORBI',
   },
+  description: "ORBI is a multidisciplinary research group at NERIST dedicated to pioneering sustainable innovations through cutting-edge research in Artificial Intelligence, Aerospace, and Robotics.",
+  keywords: ['ORBI', 'Orbital Research', 'NERIST', 'Arunachal Pradesh', 'Aerospace Engineering', 'Artificial Intelligence', 'Robotics', 'Sustainable Technology', 'Space Technology', 'R&D'],
+  authors: [{ name: 'ORBI - NERIST', url: 'https://orbi.nerist.ac.in' }],
+  
   openGraph: {
-    title: "SMART-25: Sustainable Multidisciplinary Artificial Intelligence Research for Global Transformations",
-    description: "Join researchers and experts at SMART-25 to explore how AI can accelerate the UN's Sustainable Development Goals. Hybrid mode, November 21-22, 2025.",
-    url: "https://smart25.org/", // Replace with your actual domain
-    siteName: "SMART-25 Conference",
-    images: [
-      {
-        url: 'https://smart25.org/og-image.jpg', 
-        width: 1200,
-        height: 630,
-        alt: 'SMART-25 AI Conference Banner',
-      },
-    ],
+    title: 'ORBI: Orbital Research & Beyond Innovations',
+    description: 'A multidisciplinary research group pioneering sustainable innovations in AI, Aerospace, and Robotics.',
+    url: 'https://orbi.nerist.ac.in',
+    siteName: 'ORBI Research Group',
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "SMART-25 AI Conference | Sustainable Tech & SDGs | Nov 21-22, 2025",
-    description: "Join SMART-25, the 4th International Conference on AI for Sustainable Development Goals. Submit your paper for this premier hybrid event.",
-    images: ['https://smart25.org/og-image.jpg'], // IMPORTANT: Create and upload a Twitter-specific image
+    title: 'ORBI: Orbital Research & Beyond Innovations',
+    description: 'A multidisciplinary research group pioneering sustainable innovations in AI, Aerospace, and Robotics.',
+    images: ['/og-image.png'],
   },
 };
 
 export default function Homepage() {
 
-   // --- SEO Optimization: JSON-LD Structured Data ---
+  // --- NEW, CORRECTED STRUCTURED DATA FOR ORBI ---
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "SMART-25: Sustainable Multidisciplinary Artificial Intelligence Research for Global Transformations",
-    "startDate": "2025-11-21T09:00",
-    "endDate": "2025-11-22T17:00",
-    "image": [
-      "https://smart25.org/og-image.jpg" 
-    ],
-    "eventAttendanceMode": "https://schema.org/HybridEventAttendanceMode",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "location": {
-      "@type": "Place",
-      "name": "Villa college, Maldives",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Male",
-        "addressLocality": "Male",
-        "addressRegion": "Male",
-        "postalCode": "20373",
-        "addressCountry": "MV"
-      }
+    "@type": "Organization",
+    "name": "ORBI: Orbital Research & Beyond Innovations",
+    "url": "https://orbi.nerist.ac.in",
+    "logo": "https://orbi.nerist.ac.in/images/logos/orbi-black-background.PNG",
+    "description": "ORBI is a multidisciplinary research group at NERIST dedicated to pioneering sustainable innovations through cutting-edge research in Artificial Intelligence, Aerospace, and Robotics.",
+    "parentOrganization": {
+      "@type": "CollegeOrUniversity",
+      "name": "North Eastern Regional Institute of Science and Technology (NERIST)",
+      "url": "https://www.nerist.ac.in/"
     },
-    "description": "The 4th International Conference on AI for Sustainable Development Goals, accelerating SDGs through AI research and collaboration.",
-    "organizer": {
-      "@type": "Organization",
-      "name": "IIT Bhilai, Villa College, Maldives and St. Mother Teresa Engineering College",
-      "url": "https://www.iitbhilai.ac.in/" // Link to the primary organizer
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "NH 52A",
+      "addressLocality": "Nirjuli",
+      "addressRegion": "Arunachal Pradesh",
+      "postalCode": "791109",
+      "addressCountry": "IN"
     },
-    "offers": {
-      "@type": "Offer",
-      "url": "https://smart25.org/registration", // Replace with your domain
-      "price": "100", // Example price, update as needed
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2025-07-29"
-    }
+    "sameAs": [
+      "https://twitter.com/your-handle", // Replace with your social media links
+      "https://linkedin.com/company/your-handle"
+    ]
   };
-
 
   return (
     <>
-     {/* This script injects the structured data into the page's <head> */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
     
-    <div className="bg-slate-950 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:2rem_2rem]">
-      <HeroSection />
-      <LatestNewsTicker />
-      <Notices />
-      <AboutSection />
-      <ResearchThemes />
-      <LatestNews />
-      <TeamSection />
-      <LatestProjects />
-      <RecentPublications />
-      <Collaborators />
-      <FaqAndCTA />
-    </div>
+      <div className="bg-slate-950">
+        <HeroSection />
+        <WelcomeSection />
+        <MissionSection />
+        <LatestNewsTicker />
+        <ResearchThemes />
+        <TeamSection />
+        <LatestProjects />
+        <RecentPublications />
+        <Collaborators />
+        <Notices />
+        <FaqAndCTA />
+      </div>
     </>
   );
 }
