@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: 'ORBI',
     images: [
       {
-        url: '/og-image.png', // Your preview image
+        url: '/og-image.jpg', // Your preview image
         width: 1200,
         height: 630,
         alt: 'ORBI Research Group Logo and Title',
