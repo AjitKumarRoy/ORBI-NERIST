@@ -24,8 +24,8 @@ export const NewsCard = ({ newsItem }: NewsCardProps) => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
       </div>
       <div className="flex-grow">
-        <p className="mb-2 text-sm text-cyan-400">{new Date(newsItem.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-        <h3 className="mb-2 text-lg font-bold text-white">{newsItem.title}</h3>
+        <p className="mb-2 text-sm text-cyan-400 font-heading">{new Date(newsItem.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+        <h3 className="mb-2 text-lg font-bold text-white font-heading">{newsItem.title}</h3>
         <p className="text-sm text-slate-400 line-clamp-2">{newsItem.excerpt}</p>
       </div>
       <div className="mt-4">

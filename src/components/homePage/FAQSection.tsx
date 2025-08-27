@@ -32,7 +32,7 @@ export function FAQSection() {
                   className="flex w-full items-center justify-between p-4 text-left sm:p-6"
                   onClick={() => handleClick(faqItem.id)}
                 >
-                  <span className="font-semibold text-white sm:text-lg">{faqItem.question}</span>
+                  <span className="font-semibold text-white sm:text-lg font-heading">{faqItem.question}</span>
                   <ChevronDown
                     className={`h-5 w-5 text-cyan-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
                   />

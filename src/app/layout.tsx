@@ -1,5 +1,6 @@
-import { GoogleAnalytics } from '@/components/GoogleAnalytics';
 import "@/styles/globals.css";
+
+import { GoogleAnalytics } from '@/components/GoogleAnalytics';
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import { LoadingProvider } from "@/context/LoadingContext";
 import AppContentWrapper from "@/components/AppContentWrapper";

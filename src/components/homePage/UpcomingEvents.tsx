@@ -59,29 +59,32 @@ export function UpcomingEvents() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <Link href={event.link} className="group block p-4 rounded-lg hover:bg-slate-800 transition-colors duration-300">
-              <div className="flex items-start gap-4">
-                {/* --- THIS IS THE NEW DATE BLOCK --- */}
-              <div className="flex-shrink-0 text-center font-bold w-20 border-r-2 border-slate-700 pr-4">
-                <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-3xl text-white">{formatDate(event.date).day}</span>
-                  <span className="text-base text-cyan-400">{formatDate(event.date).month}</span>
-                </div>
-                <div className="h-px bg-slate-700 my-1"></div>
-                <p className="text-sm text-slate-400">{formatDate(event.date).year}</p>
-              </div>
-              {/* --- END OF NEW DATE BLOCK --- */}
-                <div className="flex-grow">
-                  <h4 className="font-semibold text-slate-200 group-hover:text-cyan-400 transition-colors duration-300 mb-1">{event.title}</h4>
-                  {event.location && (
-                    <div className="flex items-center text-slate-400 text-sm">
-                      <FaMapMarkerAlt className="mr-2" />
-                      <span>{event.location}</span>
+          {/* --- THIS LINK STRUCTURE IS NOW CORRECTED --- */}
+                <Link href={event.link} className="text-sm group flex items-center justify-between rounded-lg p-3 transition-colors duration-300 hover:bg-white/10 border border-white/10">
+                  {/* Date and Text are now grouped together */}
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 text-center font-bold w-20 border-r-2 border-slate-700 pr-4">
+                      <div className="flex items-baseline justify-center gap-1">
+                        <span className="text-3xl text-white">{formatDate(event.date).day}</span>
+                        <span className="text-base text-cyan-400">{formatDate(event.date).month}</span>
+                      </div>
+                      <div className="h-px bg-slate-700 my-1"></div>
+                      <p className="text-sm text-slate-400">{formatDate(event.date).year}</p>
                     </div>
-                  )}
-                </div>
-                <FaArrowRight className="text-slate-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
+                    <div>
+                      <h4 className="font-medium text-slate-300 group-hover:text-cyan-400 transition-colors duration-300 mb-1">{event.title}</h4>
+                      {event.location && (
+                        <div className="flex items-center text-slate-400 text-sm">
+                          <FaMapMarkerAlt className="mr-2" />
+                          <span>{event.location}</span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                {/* --- UPDATED ARROW TO HIDE ON MOBILE --- */}
+                <FaArrowRight className="hidden sm:block mt-1 flex-shrink-0 text-slate-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            
             </Link>
           </motion.div>
         ))

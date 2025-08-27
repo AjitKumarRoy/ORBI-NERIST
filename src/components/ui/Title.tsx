@@ -23,7 +23,7 @@ export const Title = ({
       )}
       {/* Container for the text and its underline */}
       <div>
-        <Tag className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-sky-400 sm:text-4xl">
+        <Tag className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-sky-400 sm:text-3xl font-display">
           {children}
         </Tag>
         {/* The new thin, premium underline */}

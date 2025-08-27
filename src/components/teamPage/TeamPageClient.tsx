@@ -1,25 +1,27 @@
 "use client";
 
-import { motion } from 'framer-motion';
 import { PageHero } from '@/components/ui/PageHero';
-import pageData from '@/data/teamPage/team.json';
-import { ComingSoon } from '../ui/ComingSoon';
-export const TeamPageClient = () => {
-  return (
-    <motion.div 
-      className="bg-slate-950 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:2rem_2rem]"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <PageHero
-        title={pageData.hero.title}
-        subtitle={pageData.hero.subtitle}
-        backgroundImage={pageData.hero.backgroundImage}
-      />
+import { CoreTeam } from '@/components/teamPage/CoreTeam';
+// import { StudentMembers } from '@/components/teamPage/StudentMembers';
 
-      <ComingSoon />
-    
-    </motion.div>
+export function TeamPageClient({ hero, coreMembers, studentMembers }: { hero: any, coreMembers: any[], studentMembers: any[] }) {
+  // The useMemo filtering is no longer needed here
+
+  return (
+    <div>
+      <PageHero 
+        title={hero.title} 
+        subtitle={hero.subtitle} 
+        backgroundImage={hero.backgroundImage}
+      />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <CoreTeam members={coreMembers} />
+        {/* <StudentMembers members={studentMembers} /> */}
+      </div>
+    </div>
   );
-};
+}
+
+
+
+{/* className="bg-slate-950 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:2rem_2rem]" */}

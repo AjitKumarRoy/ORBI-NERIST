@@ -19,7 +19,7 @@ export const Button = ({
   ...rest 
 }: ButtonProps) => {
 
-  const baseClasses = "inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-semibold transition-all duration-300";
+  const baseClasses = "inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-semibold transition-all duration-300 font-button";
 
   const variantClasses = {
     primary: "bg-cyan-600 text-white shadow-lg hover:bg-cyan-500 hover:scale-105",

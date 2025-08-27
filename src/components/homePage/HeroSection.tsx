@@ -61,10 +61,10 @@ export const HeroSection = () => {
           >
             <motion.div
               animate={{
-                scale: [1, 1.03, 1], // The "breathing" effect
+                scale: [1, 1.2, 1], // The "breathing" effect
               }}
               transition={{
-                duration: 5,
+                duration: 7,
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
@@ -91,21 +91,21 @@ export const HeroSection = () => {
             <motion.h1
               variants={itemVariants}
               // UPDATED: Reduced font size on mobile and tablet
-              className="text-5xl sm:text-6xl md:text-8xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500 mb-2"
+              className="text-5xl sm:text-6xl md:text-8xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500 mb-2 font-display"
             >
               {heroData.title}
             </motion.h1>
             <motion.p
               variants={itemVariants}
               // UPDATED: Adjusted font size for better readability on smaller screens
-              className="text-lg sm:text-xl md:text-2xl text-slate-200 font-light"
+              className="text-lg sm:text-xl md:text-2xl text-slate-200 font-light font-display"
             >
               {heroData.subtitle}
             </motion.p>
             <motion.div variants={itemVariants} className="mt-8">
               <Link
                 href={heroData.ctaButton.link}
-                className="group inline-flex items-center justify-center rounded-md bg-cyan-600 px-6 py-3 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:bg-cyan-500 hover:scale-105"
+                className="group inline-flex items-center justify-center rounded-md bg-cyan-600 px-6 py-3 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:bg-cyan-500 hover:scale-105 "
               >
                 {heroData.ctaButton.text}
                 <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />

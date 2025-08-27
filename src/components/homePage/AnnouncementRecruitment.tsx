@@ -74,7 +74,7 @@ export function AnnouncementRecruitment() {
           <Title icon={CurrentIcon} as="h3">
             {tabs[selectedIndex].name}
           </Title>
-          <Tab.List className="flex items-center gap-2 mt-4 sm:mt-0">
+          <Tab.List className="flex items-center gap-2 mt-4 sm:mt-0 font-heading">
             {tabs.map((tab, index) => (
               <React.Fragment key={tab.name}>
                 <Tab
@@ -120,17 +120,18 @@ export function AnnouncementRecruitment() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                       >
-                        <Link href={item.link} className="group flex items-start gap-4 rounded-lg p-3 transition-colors duration-300 hover:bg-white/10">
+                        {/* --- UPDATED PADDING & GAP FOR MOBILE --- */}
+                        <Link href={item.link} className="text-sm group flex items-start gap-2 sm:gap-4 rounded-lg p-3 transition-colors duration-300 hover:bg-white/10 border border-white/10">
                           <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-cyan-400/10 mt-1">
                             <FiChevronsRight className="text-base text-cyan-400" />
                           </div>
                           
                           <div className="flex-grow">
                             <div className="flex items-center">
-                              <p className="font-medium text-slate-300 transition-colors duration-300 group-hover:text-cyan-400 sm:text-base">{item.title}</p>
-                              {isNew && (
-                                <span className="ml-3 text-xs font-semibold bg-cyan-900/70 text-cyan-300 px-2 py-0.5 rounded-full">NEW</span>
-                              )}
+                              <p className="font-medium text-slate-300 transition-colors duration-300 group-hover:text-cyan-400 sm:text-base">{item.title}.{isNew && (
+                                <span className=" ml-3 text-xs font-semibold bg-cyan-900/70 text-cyan-300 px-2 py-0.5 rounded-full">NEW</span>
+                              )}</p>
+                              
                             </div>
                             {item.date && (
                               <p className="text-sm text-slate-400 mt-1">
@@ -139,7 +140,8 @@ export function AnnouncementRecruitment() {
                             )}
                           </div>
                           
-                          <FaArrowRight className="mt-1 flex-shrink-0 text-slate-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                          {/* --- UPDATED ARROW TO HIDE ON MOBILE --- */}
+                          <FaArrowRight className="hidden sm:block mt-1 flex-shrink-0 text-slate-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                         </Link>
                       </motion.div>
                     );

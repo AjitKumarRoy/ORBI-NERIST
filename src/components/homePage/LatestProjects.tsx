@@ -24,14 +24,17 @@ export function LatestProjects() {
 
   return (
     <Section>
-      <div className="flex flex-col items-center justify-between gap-4  md:flex-row md:text-left">
+      <div className="flex items-center justify-between">
         <Title icon={Beaker} as="h2" className="mb-0">
           Our Innovations & Research Projects
         </Title>
-        <Button href="/research" variant="secondary" className="hidden md:inline-flex">
+        
+        <span className="hidden md:inline-flex">
+          <Button href="/research" variant="secondary">
           <span>View All</span>
           <ArrowRight className="h-4 w-4" />
         </Button>
+        </span>
       </div>
 
       {featuredProjects.length > 0 ? (

@@ -21,14 +21,17 @@ export function RecentPublications() {
 
   return (
     <Section>
-      <div className="flex flex-col items-center justify-between gap-4  md:flex-row md:text-left">
+      <div className="flex items-center justify-between">
         <Title icon={FileText} as="h2" className="mb-0 ">
           Recent Publications
         </Title>
-        <Button href="/publications" variant="secondary" className="hidden md:inline-flex">
+        
+        <span className="hidden md:inline-flex">
+          <Button href="/publications" variant="secondary" >
           <span>View All</span>
           <ArrowRight className="h-4 w-4" />
         </Button>
+        </span>
       </div>
 
       {recentPublications.length > 0 ? (

@@ -4,26 +4,28 @@ import { useMemo } from 'react';
 import { Section } from '@/components/ui/Section';
 import { Title } from '@/components/ui/Title';
 import { Button } from '@/components/ui/Button';
-import teamData from '@/data/teamPage/team.json';
+import teamData from '@/data/teamPage/coreMembers.json';
 import { TeamCard } from '@/components/ui/TeamCard';
 import { Users, ArrowRight } from 'lucide-react';
 import { Carousel } from '@/components/ui/Carousel1'; // Import the Carousel
 
 export function TeamSection() {
-  const featuredMembers = useMemo(() => teamData.coreMembers.filter(member => member.featured), []);
+  const featuredMembers = useMemo(() => teamData.filter(member => member.featured), []);
 
   return (
     <Section>
       
-      <div className="flex flex-col items-center justify-between gap-4 md:flex-row md:text-left">
+      <div className="flex items-center justify-between">
         <Title icon={Users} as="h2" className="mb-0">
                 Guidance & Mentorship
               </Title>
 
-              <Button href="/team" variant="secondary" className="hidden md:inline-flex">
+              <span className="hidden md:inline-flex">
+                <Button href="/team" variant="secondary" >
                 <span>View All</span>
                 <ArrowRight className="h-4 w-4" />
               </Button>
+              </span>
             </div>
       
       {/* --- The grid is now replaced with the Carousel --- */}

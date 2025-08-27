@@ -39,7 +39,7 @@ export const TeamCard = ({ member }: TeamCardProps) => {
           />
         ) : (
           // If no image, display the initials fallback
-          <div className="flex h-full w-full items-center justify-center rounded-full bg-gradient-to-br from-slate-700 to-slate-800">
+          <div className="flex h-full w-full items-center justify-center rounded-full bg-gradient-to-br from-slate-700 to-slate-800 font-heading">
             <span className="text-3xl font-bold text-cyan-400">
               {getInitials(member.name)}
             </span>
@@ -47,7 +47,7 @@ export const TeamCard = ({ member }: TeamCardProps) => {
         )}
       </div>
       <div className="mt-4">
-        <h3 className="text-lg font-bold text-white">{member.name}</h3>
+        <h3 className="text-lg font-bold text-white font-heading">{member.name}</h3>
         <p className="mt-1 text-sm text-cyan-400">{member.role}</p>
         <p className="mt-2 text-xs text-slate-400">{member.affiliation}</p>
       </div>

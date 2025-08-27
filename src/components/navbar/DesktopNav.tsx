@@ -34,7 +34,7 @@ export function DesktopNav({
 }: DesktopNavProps) {
   return (
     // Set the base text color for the entire desktop nav
-    <div className="hidden lg:flex gap-8 items-center text-slate-300">
+    <div className="hidden lg:flex gap-8 items-center text-slate-300 font-heading ">
       {mainNavLinks.map((item) => (
         <NavLink
           key={item.href}

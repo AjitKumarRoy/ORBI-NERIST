@@ -54,7 +54,7 @@ export function ResearchThemes() {
                   <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-cyan-400/10 mb-6">
                     <IconComponent className="h-6 w-6 text-cyan-400" />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-white">{theme.title}</h3>
+                  <h3 className="mb-2 text-xl font-bold text-white font-heading">{theme.title}</h3>
                   <p className="text-slate-400 mb-6">{theme.description}</p>
                   
                   

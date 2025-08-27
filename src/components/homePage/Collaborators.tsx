@@ -49,7 +49,7 @@ export function Collaborators() {
                   
                   {/* Title positioned at the bottom */}
                   <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <p className="font-bold text-white text-lg drop-shadow-md">
+                    <p className="font-bold text-white text-lg drop-shadow-md font-heading">
                       {collaborator.name}
                     </p>
                   </div>

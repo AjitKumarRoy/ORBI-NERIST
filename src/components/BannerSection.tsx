@@ -78,10 +78,10 @@ export function BannerSection() {
 
       {/* Center Text - Group Name */}
       <motion.div variants={titleVariants} className="flex-grow text-center max-w-2xl">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold bg-gradient-to-r from-cyan-400 to-sky-500 text-transparent bg-clip-text leading-tight mb-2">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold bg-gradient-to-r from-cyan-400 to-sky-500 text-transparent bg-clip-text leading-tight mb-2 font-display">
           Orbital Research & Beyond Innovations
         </h1>
-        <p className="text-base md:text-lg text-slate-300 font-semibold tracking-wider">
+        <p className="text-base md:text-lg text-slate-300 font-semibold tracking-wider font-heading">
           North Eastern Regional Institute of Science and Technology
         </p>
       </motion.div>

@@ -20,14 +20,16 @@ export function LatestNews() {
 
   return (
     <Section>
-      <div className="flex flex-col items-center justify-between gap-4 md:flex-row md:text-left">
+      <div className="flex items-center justify-between">
         <Title icon={Newspaper} as="h2" className="mb-0">
           Latest News & Updates
         </Title>
-        <Button href="/news" variant="secondary" className="hidden md:inline-flex">
+        <span className="hidden md:inline-flex">
+          <Button href="/news" variant="secondary" >
           <span>View All</span>
           <ArrowRight className="h-4 w-4" />
         </Button>
+        </span>
       </div>
 
       {latestNews.length > 0 ? (

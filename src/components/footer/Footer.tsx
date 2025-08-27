@@ -1,12 +1,12 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { mainNavLinks, moreDropdownLinks } from './FooterData';
 import footerData from './footer.json';
-import { Twitter, Linkedin, Github, ArrowUp, Mail, Phone, MapPin, ChevronRight } from 'lucide-react';
+import { Twitter, Linkedin, Github, ChevronUp, Mail, Phone, MapPin, ChevronRight } from 'lucide-react';
 
 const iconMap = {
   Twitter: Twitter,
@@ -26,35 +26,58 @@ const FooterHeadingUnderline = () => (
   />
 );
 
-// Sub-component for the "Back to Top" button
+// --- UPDATED BACK TO TOP BUTTON LOGIC ---
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    const toggleVisibility = () => {
+    const handleScroll = () => {
+      // Rule 1: Show the button only after scrolling past 300px
       if (window.pageYOffset > 300) {
         setIsVisible(true);
+        
+        // Rule 3: When scrolling starts, clear any existing timeout
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+        }
+        
+        // Rule 2: Set a new timeout to hide the button after 2 seconds of no scrolling
+        timeoutRef.current = setTimeout(() => {
+          setIsVisible(false);
+        }, 2000); // 2000 milliseconds = 2 seconds
+
       } else {
         setIsVisible(false);
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+        }
       }
     };
-    window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
   }, []);
+
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <motion.button
+     <motion.button
       onClick={scrollToTop}
-      className={`fixed bottom-8 right-8 h-12 w-12 rounded-full bg-cyan-500/80 text-white shadow-lg backdrop-blur-sm transition-all duration-300 hover:bg-cyan-500 hover:scale-110 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
+      className={`fixed bottom-8 right-8 h-10 w-10 z-50 rounded-xl bg-cyan-500/80 text-white shadow-lg backdrop-blur-sm transition-opacity duration-300 hover:bg-cyan-500 hover:scale-110 ${
+        isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
       aria-label="Back to top"
     >
-      <ArrowUp className="mx-auto h-6 w-6" />
+      <ChevronUp className="mx-auto h-6 w-6" />
     </motion.button>
   );
 };
@@ -89,7 +112,7 @@ export default function Footer() {
             <Link href="/" className="inline-flex items-center gap-3 mb-4 border border-white/10 rounded-2xl">
               <Image src={footerData.logoUrl} alt="ORBI Logo" width={250} height={250} />
             </Link>
-            <div className="text-xl font-bold text-white mb-2">Orbital Research & Beyond Innovations</div>
+            <div className="text-xl font-bold text-white mb-2 font-heading">Orbital Research & Beyond Innovations</div>
             <FooterHeadingUnderline />
             <p className="text-sm">{footerData.brief}</p>
             <div className="mt-6 flex gap-4">
@@ -106,7 +129,7 @@ export default function Footer() {
 
           {/* Column 2: Quick Links */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-lg font-semibold text-white">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-white font-heading">Quick Links</h3>
             <FooterHeadingUnderline />
             <ul className="mt-4 space-y-2">
               {mainNavLinks.map(link => (
@@ -122,7 +145,7 @@ export default function Footer() {
 
           {/* Column 3: Explore */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-lg font-semibold text-white">Explore</h3>
+            <h3 className="text-lg font-semibold text-white font-heading">Explore</h3>
             <FooterHeadingUnderline />
             <ul className="mt-4 space-y-2">
               {moreDropdownLinks.map(link => (
@@ -138,7 +161,7 @@ export default function Footer() {
           
           {/* Column 4: Contact */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-lg font-semibold text-white">Contact Us</h3>
+            <h3 className="text-lg font-semibold text-white font-heading">Contact Us</h3>
             <FooterHeadingUnderline />
             <div className="mt-4 space-y-3">
               <div className="flex items-start gap-3">
@@ -177,7 +200,7 @@ export default function Footer() {
 
       {/* 3. Sub-Footer / Copyright Bar */}
       <div className="border-t border-white/50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-sm">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-sm font-heading">
           <p>&copy; {currentYear} ORBI: Orbital Research & Beyond Innovations. All Rights Reserved.</p>
           <p className="mt-1">
           Designed & Developed by {" "}

@@ -60,8 +60,8 @@ export const PublicationCard = ({ publication }: PublicationCardProps) => {
       </div>
       
       <div className="flex-grow">
-        <p className="mb-2 font-semibold text-cyan-400">Published In: {publication.year}</p>
-        <h3 className="mb-4 text-lg font-bold text-white line-clamp-3">{publication.title}</h3>
+        <p className="mb-2 font-semibold text-cyan-400 font-heading">Published: {publication.year}</p>
+        <h3 className="mb-4 text-lg font-bold text-white line-clamp-3 font-heading">{publication.title}</h3>
       </div>
       <div className="mt-auto">
         <Button href={publication.link} variant="secondary" className="inline-flex w-full justify-center">

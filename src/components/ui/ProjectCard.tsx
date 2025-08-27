@@ -22,14 +22,14 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         {/* Fields overlaid at the bottom of the image */}
         <div className="absolute bottom-0 left-0 right-0 flex flex-wrap gap-2 p-2 bg-gradient-to-t from-black/80 to-transparent">
           {project.fields.map((field) => (
-            <span key={field} className="rounded bg-cyan-900/80 px-2 py-1 text-xs font-semibold text-cyan-300 backdrop-blur-sm">
+            <span key={field} className="rounded bg-cyan-900/80 px-2 py-1 text-xs font-semibold text-cyan-300 backdrop-blur-sm font-heading">
               {field}
             </span>
           ))}
         </div>
       </div>
       <div className="flex-grow">
-        <h3 className="mb-4 text-lg font-bold text-white line-clamp-2">{project.title}</h3>
+        <h3 className="mb-4 text-lg font-bold text-white line-clamp-2 font-heading">{project.title}</h3>
       </div>
       <div className="mt-auto">
         <Button href={project.link} variant="secondary" className="inline-flex w-full justify-center">
