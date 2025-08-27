@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'ORBI: Orbital Research & Beyond Innovations',
     description: 'A multidisciplinary research group pioneering sustainable innovations in AI, Aerospace, and Robotics.',
-    images: ['/og-image.png'], // Your preview image
+    images: ['/og-image.jpg'], // Your preview image
   },
 
   // --- Icons & Manifest ---

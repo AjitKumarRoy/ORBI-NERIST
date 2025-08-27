@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     description: 'A multidisciplinary research group pioneering sustainable innovations in AI, Aerospace, and Robotics.',
     url: 'https://orbi.nerist.ac.in',
     siteName: 'ORBI Research Group',
-    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'ORBI: Orbital Research & Beyond Innovations',
     description: 'A multidisciplinary research group pioneering sustainable innovations in AI, Aerospace, and Robotics.',
-    images: ['/og-image.png'],
+    images: ['/og-image.jpg'],
   },
 };
 
