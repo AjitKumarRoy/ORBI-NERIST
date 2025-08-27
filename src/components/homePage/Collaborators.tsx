@@ -36,7 +36,7 @@ export function Collaborators() {
                   href={collaborator.link} 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="group relative block h-48 w-full overflow-hidden rounded-2xl shadow-lg"
+                  className="group relative block h-48 w-full overflow-hidden rounded-2xl shadow-lg border border-white/30"
                 >
                   <Image
                     src={collaborator.logoUrl}

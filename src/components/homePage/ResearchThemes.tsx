@@ -34,7 +34,7 @@ const cardVariants = {
 export function ResearchThemes() {
   return (
     <Section>
-      <Title icon={Network} as="h4" className='text-center mb-6'>
+      <Title icon={Network} as="h4" className='mb-6'>
                 {`Core Research Areas`}
        </Title>
       {/* className="rounded-2xl bg-slate-950 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15),rgba(255,255,255,0))]" */}

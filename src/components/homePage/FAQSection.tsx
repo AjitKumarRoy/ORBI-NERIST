@@ -18,7 +18,7 @@ export function FAQSection() {
   };
 
   return (
-    <Section className="rounded-2xl bg-slate-950 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15),rgba(255,255,255,0))]">
+    <Section className="border border-white/10 rounded-2xl bg-slate-950 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15),rgba(255,255,255,0))]">
       <Title icon={HelpCircle} as="h2">
         Frequently Asked Questions
       </Title>

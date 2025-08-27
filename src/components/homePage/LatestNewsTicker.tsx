@@ -28,7 +28,7 @@ export function LatestNewsTicker() {
 
   return (
     <Section>
-        <div className="flex items-center rounded-xl border border-white/10 bg-black/20 p-3 sm:p-2 shadow-2xl backdrop-blur-md">
+        <div className="flex items-center rounded-xl border border-white/10 bg-slate-950 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15),rgba(255,255,255,0))] p-3 sm:p-2 shadow-2xl backdrop-blur-md">
         
         <div className="flex-shrink-0 bg-cyan-500 text-white font-bold flex items-center justify-center rounded-lg px-4 py-3">
           <Newspaper className="h-6 w-6 sm:mr-3" />

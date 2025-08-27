@@ -20,7 +20,7 @@ export function LatestNews() {
 
   return (
     <Section>
-      <div className="flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
+      <div className="flex flex-col items-center justify-between gap-4 md:flex-row md:text-left">
         <Title icon={Newspaper} as="h2" className="mb-0">
           Latest News & Updates
         </Title>

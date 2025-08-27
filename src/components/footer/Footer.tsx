@@ -14,6 +14,18 @@ const iconMap = {
   Github: Github,
 };
 
+
+// --- NEW SUB-COMPONENT FOR THE PREMIUM UNDERLINE ---
+const FooterHeadingUnderline = () => (
+  <motion.div 
+    className="mt-2 mb-4 h-0.5 w-1/3 bg-gradient-to-r from-cyan-400 to-sky-500"
+    initial={{ scaleX: 0, originX: 0 }}
+    whileInView={{ scaleX: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+  />
+);
+
 // Sub-component for the "Back to Top" button
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -73,11 +85,12 @@ export default function Footer() {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* Column 1: About ORBI */}
-          <motion.div variants={itemVariants} className="lg:col-span-1 lg:border-r-2 lg:border-slate-700">
-            <Link href="/" className="inline-flex items-center gap-3 mb-4">
+          <motion.div variants={itemVariants} className="lg:col-span-1 lg:border-r-2 lg:border-slate-700 pr-4">
+            <Link href="/" className="inline-flex items-center gap-3 mb-4 border border-white/10 rounded-2xl">
               <Image src={footerData.logoUrl} alt="ORBI Logo" width={250} height={250} />
             </Link>
-            <div className="text-xl font-bold text-white">Orbital Research & Beyond Innovations</div>
+            <div className="text-xl font-bold text-white mb-2">Orbital Research & Beyond Innovations</div>
+            <FooterHeadingUnderline />
             <p className="text-sm">{footerData.brief}</p>
             <div className="mt-6 flex gap-4">
               {footerData.socials.map((social) => {
@@ -94,6 +107,7 @@ export default function Footer() {
           {/* Column 2: Quick Links */}
           <motion.div variants={itemVariants}>
             <h3 className="text-lg font-semibold text-white">Quick Links</h3>
+            <FooterHeadingUnderline />
             <ul className="mt-4 space-y-2">
               {mainNavLinks.map(link => (
                 <li key={link.href}>
@@ -109,6 +123,7 @@ export default function Footer() {
           {/* Column 3: Explore */}
           <motion.div variants={itemVariants}>
             <h3 className="text-lg font-semibold text-white">Explore</h3>
+            <FooterHeadingUnderline />
             <ul className="mt-4 space-y-2">
               {moreDropdownLinks.map(link => (
                 <li key={link.href}>
@@ -124,6 +139,7 @@ export default function Footer() {
           {/* Column 4: Contact */}
           <motion.div variants={itemVariants}>
             <h3 className="text-lg font-semibold text-white">Contact Us</h3>
+            <FooterHeadingUnderline />
             <div className="mt-4 space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-1 flex-shrink-0 text-cyan-400" />
@@ -149,7 +165,7 @@ export default function Footer() {
                   allowFullScreen={false}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  className="grayscale transition-all duration-500 hover:grayscale-0"
+                  className="grayscale transition-all duration-500 hover:grayscale-0 rounded-2xl"
                 ></iframe>
               </div>
           </motion.div>

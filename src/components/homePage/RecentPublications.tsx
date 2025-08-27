@@ -21,8 +21,8 @@ export function RecentPublications() {
 
   return (
     <Section>
-      <div className="flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
-        <Title icon={FileText} as="h2" className="mb-0">
+      <div className="flex flex-col items-center justify-between gap-4  md:flex-row md:text-left">
+        <Title icon={FileText} as="h2" className="mb-0 ">
           Recent Publications
         </Title>
         <Button href="/publications" variant="secondary" className="hidden md:inline-flex">

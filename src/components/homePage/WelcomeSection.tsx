@@ -15,7 +15,7 @@ export function WelcomeSection() {
   const IconComponent = iconMap[welcomeData.icon as keyof typeof iconMap];
 
   return (
-    <Section className="rounded-2xl bg-slate-950 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15),rgba(255,255,255,0))]">
+    <Section className="border border-white/10 rounded-2xl bg-slate-950 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15),rgba(255,255,255,0))]">
       <div className="max-w-3xl mx-auto">
         <Title icon={IconComponent} as="h2" className='text-left mb-6'>
           {welcomeData.heading}
