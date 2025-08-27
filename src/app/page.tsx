@@ -2,16 +2,18 @@ import { Metadata } from 'next';
 
 // Import Section Components
 import { HeroSection } from '@/components/homePage/HeroSection';
-import { WelcomeSection } from '@/components/homePage/WelcomeSection';
-import { MissionSection } from '@/components/homePage/MissionSection';
 import { LatestNewsTicker } from '@/components/homePage/LatestNewsTicker';
 import { Notices } from '@/components/homePage/Notices';
+import { AboutSection } from '@/components/homePage/AboutSection';
 import { ResearchThemes } from '@/components/homePage/ResearchThemes';
+import { LatestNews } from '@/components/homePage/LatestNews';
 import { TeamSection } from "@/components/homePage/TeamSection";
 import { LatestProjects } from '@/components/homePage/LatestProjects';
 import { RecentPublications } from '@/components/homePage/RecentPublications';
 import { Collaborators } from '@/components/homePage/Collaborators';
 import { FaqAndCTA } from '@/components/homePage/FaqAndCTA';
+
+
 
 // --- NEW, CORRECTED METADATA FOR ORBI ---
 export const metadata: Metadata = {
@@ -68,26 +70,29 @@ export default function Homepage() {
     ]
   };
 
+
+
   return (
     <>
+     {/* This script injects the structured data into the page's <head> */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
     
-      <div className="bg-slate-950">
-        <HeroSection />
-        <WelcomeSection />
-        <MissionSection />
-        <LatestNewsTicker />
-        <ResearchThemes />
-        <TeamSection />
-        <LatestProjects />
-        <RecentPublications />
-        <Collaborators />
-        <Notices />
-        <FaqAndCTA />
-      </div>
+    <div className="bg-slate-950 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:2rem_2rem]">
+      <HeroSection />
+      <LatestNewsTicker />
+      <Notices />
+      <AboutSection />
+      <ResearchThemes />
+      <LatestNews />
+      <TeamSection />
+      <LatestProjects />
+      <RecentPublications />
+      <Collaborators />
+      <FaqAndCTA />
+    </div>
     </>
   );
 }
