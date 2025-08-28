@@ -1,7 +1,9 @@
 {
   "heading": "Welcome to ORBI",
   "icon": "Layers",
-  "paragraph": "Greetings and welcome to ORBI: Orbital Research & Beyond Innovations! We are a dynamic, student-led research group at NERIST, dedicated to shaping the future of space technology. Our work orbits at the intersection of Aerospace Engineering, Artificial Intelligence, and Robotics. Through rigorous interdisciplinary collaboration and a commitment to pushing beyond conventional thinking, we develop cutting-edge solutions to real-world challenges. We invite you to explore our projects, discover our research, and learn how you can be a part of our exciting journey to the frontiers of science and technology.",
+  "paragraph1": "ORBI is a dynamic, student-driven club at NERIST. We aim to explore the frontiers of Artificial Intelligence, Robotics, UAVs (Unmanned Aerial Vehicles), and Space Technology. Established as a hub for innovation and learning, the club aims to provide students with a unique platform that combines fundamental knowledge with hands-on experience.",
+  "paragraph2": "Apart from nurturing technical skills, ORBI strives to cultivate curiosity, teamwork, and problem-solving abilities through tailor-made workshops, projects, and guided mentorship to complement their academic learning.",
+  "paragraph3": "ORBI aims to extend its reach beyond the classroom to explore the mysteries of the cosmos. With our commitment to societal growth, we intend to expand our outreach to schools in rural and underrepresented communities. By introducing younger students—especially those from remote locations with limited exposure to the wonders of AI, Robotics, Space, and UAVs- we aspire to spark early interest in space science and technology and inspire the innovators and change-makers of tomorrow.",
   "button": {
     "text": "Learn More About Us",
     "link": "/about"

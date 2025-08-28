@@ -5,6 +5,7 @@ import { HeroSection } from '@/components/homePage/HeroSection';
 import { LatestNewsTicker } from '@/components/homePage/LatestNewsTicker';
 import { Notices } from '@/components/homePage/Notices';
 import { AboutSection } from '@/components/homePage/AboutSection';
+// import { MissionVison } from '@/components/homePage/MissionVison';
 import { ResearchThemes } from '@/components/homePage/ResearchThemes';
 import { LatestNews } from '@/components/homePage/LatestNews';
 import { TeamSection } from "@/components/homePage/TeamSection";
@@ -85,6 +86,7 @@ export default function Homepage() {
       <LatestNewsTicker />
       <Notices />
       <AboutSection />
+      {/* <MissionVison /> */}
       <ResearchThemes />
       <LatestNews />
       <TeamSection />
