@@ -38,7 +38,7 @@ export const CoreTeam = ({ members }: { members: TeamMember[] }) => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.1 }}
       >
         {members.map(member => (
           // Each card is now a motion.div

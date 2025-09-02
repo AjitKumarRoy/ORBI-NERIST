@@ -13,7 +13,7 @@ export const Section = ({ children, className = '', ...rest }: SectionProps) => 
       className={`w-full px-4 py-12 md:px-8 md:py-16 lg:py-20 ${className}`}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       {...rest} // This will now be correctly typed
     >
