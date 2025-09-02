@@ -2,6 +2,7 @@
 "use client"; // This component MUST be a client component
 
 import React from 'react';
+import { usePathname } from 'next/navigation';
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import InitialLoader from "@/components/InitialLoader";
@@ -16,6 +17,10 @@ interface AppContentWrapperProps {
 // This component will conditionally render the main UI based on the loading state
 export default function AppContentWrapper({ children }: AppContentWrapperProps) {
   const { isLoading } = useLoading(); // This hook requires the component to be a client component
+  const pathname = usePathname(); // get the current path
+
+  //check if the current path is the homepge
+  const isHomePage = pathname === '/';
 
   return (
     <>
@@ -26,8 +31,13 @@ export default function AppContentWrapper({ children }: AppContentWrapperProps) 
       {/* Render the main application content only when isLoading is false */}
       {!isLoading && (
         <>
-          <NotificationBar />
-          <BannerSection />
+          {/* Contidionally render the BannerSection */}
+          {isHomePage && (
+            <> 
+            <NotificationBar />
+            <BannerSection />
+            </>
+          )}
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />
